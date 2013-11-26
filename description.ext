@@ -7,7 +7,7 @@ class Header
 {
 	gameType = Coop;
 	minPlayers = 1;
-	maxPlayers = 970;
+	maxPlayers = 540;
 };
 
 // ============================================================================================
@@ -15,9 +15,9 @@ class Header
 // F2 - Loading Screen
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f3/en/)
 
-onLoadName = "*** Insert mission name here. ***";
-onLoadMission = "Made by Wolfenswan for Folk ARPS";
-loadScreen = "fa.paa";
+onLoadName = "faco_co64_ashore";
+onLoadMission = "faco_co64_ashore";
+loadScreen =  "image\intro.jpg";
 
 // ============================================================================================
 
@@ -36,19 +36,13 @@ respawndelay = 3;
 #include "f\common\f_JIP_grppicker.h"
 
 // ============================================================================================
-
-// F2 - Start of Params code blocks.
-// WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
-
-class Params
-{
-
-// ============================================================================================
-
-// F2 - Whether AssignGear should allow Backpacks for OA/BAF/PMC units. Works only on A2 units in CO 1.63 or later.
+// F2 - Whether AssignGear should allow Backpacks for OA/BAF/PMC units
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 // WARNING: DO NOT DISABLE THIS COMPONENT OR CHANGE POSITION IN PARAMS; IT MUST BE REFERENCABLE
 // AS "paramsarray select 0" FOR GEAR SCRIPTS TO WORK CORRECTLY
+
+class Params
+{
 	class f_param_useBackpacks
         {
                 title = "OA Backpacks";
@@ -60,7 +54,7 @@ class Params
 
 // ============================================================================================
 
-// F2 - ACRE Support
+// F2 - ACRE Mode
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 // WARNING: DO NOT DISABLE THIS COMPONENT OR CHANGE POSITION IN PARAMS; IT MUST BE REFERENCABLE
 // AS "paramsarray select 1" FOR GEAR SCRIPTS TO WORK CORRECTLY
@@ -94,22 +88,22 @@ class Params
 // F2 - Mission Conditions Selector
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-        class f_param_timeOfDay
-        {
+    class f_param_timeOfDay
+    {
                 title = "$STR_f_param_timeOfDay";
-                values[] = {0,1,2,3,4,5,6,7};
-                texts[] = {$STR_f_param_timeOfDay_Option0,$STR_f_param_timeOfDay_Option1,$STR_f_param_timeOfDay_Option2,$STR_f_param_timeOfDay_Option3,$STR_f_param_timeOfDay_Option4,$STR_f_param_timeOfDay_Option5,$STR_f_param_timeOfDay_Option6,$STR_f_param_timeOfDay_Option7};
-                default = 3;
+                values[] = {0,1,6,7};
+                texts[] = {$STR_f_param_timeOfDay_Option0,$STR_f_param_timeOfDay_Option1,$STR_f_param_timeOfDay_Option6,$STR_f_param_timeOfDay_Option7};
+                default = 0;
                 code = "f_param_timeOfDay = %1";
-        };
-        class f_param_weather
+    };
+    class f_param_weather
 	{
 		title = "$STR_f_param_weather";
 		values[] = {0,1,2,3,4};
-		texts[] = {$STR_f_param_weather_Option0,$STR_f_param_weather_Option1,$STR_f_param_weather_Option2,$STR_f_param_weather_Option3,$STR_f_param_weather_Option4};
-		default = 0;
+		texts[] = {$STR_f_param_weather_Option0,$STR_f_param_weather_Option1,"Light Fog (FPS Gain, ~600m visibility)","Heavy Fog (FPS Gain, low visibility)",$STR_f_param_weather_Option4};
+		default = 2;
 		code = "f_param_weather = %1";
-        };
+    };
 
 // ============================================================================================
 
@@ -155,10 +149,41 @@ class Params
 //		code = "f_param_AISkill_OPFOR = %1";
 //	};
 
-// ============================================================================================
+	class ws_param_grass
+	{
+		title = "Disable grass";
+		values[] = {1,0};
+		texts[] = {"On","Off"};
+		default = 1;
+		code = "ws_param_grass = %1";
+	};
 
-// F2 - End of Params code blocks.
-// WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
+	class ws_param_caching
+	{
+		title = "Enable unit caching (slight FPS gain)";
+		values[] = {1,0};
+		texts[] = {"On","Off"};
+		default = 1;
+		code = "ws_param_caching = %1";
+	};
+
+	class ws_param_mortars
+	{
+		title = "AI controlled mortars firing on players";
+		values[] = {0,480,1000};
+		texts[] = {"Off","After 8 minutes","After 12 minutes"};
+		default = 480;
+		code = "ws_param_mortars = %1";
+	};
+
+	class ws_param_nvgs
+	{
+		title = "NVGs for players";
+		values[] = {1,0};
+		texts[] = {"Yes","No"};
+		default = 0;
+		code = "ws_param_nvgs = %1";
+	};
 
 };
 
@@ -188,7 +213,7 @@ class RscTitles {
 // #include "f\common\f_recog\recogOverlay.hpp"
 
 // ============================================================================================
-		class introImage
+	class introImage
   {
     idd = -1;
     movingEnable = false;

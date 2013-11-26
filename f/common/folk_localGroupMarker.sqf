@@ -163,12 +163,19 @@ if ((count (units _grp)) == 0) then
 // position is updated periodically. This only happens locally - so as not to burden 
 // the server.
 
+/*
 		for [{_i=0}, {_i<=10000}, {_i=_i+1}] do
 		{
 			if (alive leader _grp) then 
 			{
 			_mkrName setMarkerPosLocal [(getPos leader _grp select 0),(getPos leader _grp select 1)];
 			};
+			sleep 6;
+		};
+*/
+
+		while {({alive _x} count (units _grp)) > 0} do {
+			_mkrName setMarkerPosLocal [(getPos leader _grp select 0),(getPos leader _grp select 1)];
 			sleep 6;
 		};
 

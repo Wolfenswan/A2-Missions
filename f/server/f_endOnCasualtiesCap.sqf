@@ -17,6 +17,7 @@ private ["_grps","_pc","_end","_started","_remaining","_counter","_grpsno","_grp
 
 // SET KEY VARIABLES
 // Using variables passed to the script instance, we will create some local variables:
+
 _grpstemp = _this select 0;
 _pc = _this select 1;
 _end = _this select 2;

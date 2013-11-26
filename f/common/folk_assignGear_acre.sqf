@@ -46,7 +46,7 @@
 
 _radio1 = "ACRE_PRC117F"; //longrange
 _radio2 = "ACRE_PRC148";  //midrange
-_radio3 = "ACRE_PRC343";
+_radio3 = "";
 
 // ====================================================================================
 
@@ -55,22 +55,6 @@ _radio3 = "ACRE_PRC343";
 
 _typeofUnit = toLower (_this select 0);			// Tidy input for SWITCH/CASE statements, expecting something like : r = Rifleman, co = Commanding Officer, rat = Rifleman (AT)
 _unit = _this select 1;							// expecting name of unit; originally passed by using 'this' in unit init
-
-// ====================================================================================
-
-// DELETE ALL RADIOS
-// All previously assigned radios must be deleted, in order to set the radio frequencies per side.
-
-_clearRadiosHandle = _this execVM "f\common\fa_ACRE_clearRadios.sqf";
-
-waitUntil{scriptDone _clearRadiosHandle};
-
-// ====================================================================================
-
-// ADD 343s
-// Gives each player a 343.
-
-_unit addWeapon _radio3;
 
 // ====================================================================================
 
@@ -113,19 +97,19 @@ switch (_typeofUnit) do
 // LOADOUT: AUTOMATIC RIFLEMAN
 	case "ar":
 	{
-		//_unit addWeapon _radio2;
+		_unit addWeapon _radio2;
 	};	
 	
 // LOADOUT: ASSISTANT AUTOMATIC RIFLEMAN
 	case "aar":
 	{
-		//_unit addWeapon _radio2;
+		_unit addWeapon _radio2;
 	};			
 	
 // LOADOUT: RIFLEMAN (AT)	
 	case "rat":
 	{
-		//_unit addWeapon _radio2;
+		_unit addWeapon _radio2;
 	};		
 	
 // LOADOUT: SURFACE TO AIR MISSILE GUNNER 
@@ -137,7 +121,7 @@ switch (_typeofUnit) do
 // LOADOUT: ASSISTANT SURFACE TO AIR MISSILE GUNNER
 	case "samag":
 	{
-		//_unit addWeapon _radio2;
+		_unit addWeapon _radio2;
 	};			
 	
 // LOADOUT: MEDIUM MG GUNNER	
@@ -149,7 +133,7 @@ switch (_typeofUnit) do
 // LOADOUT: MEDIUM MG ASSISTANT GUNNER	
 	case "mmgag":
 	{
-		//_unit addWeapon _radio2;		
+		_unit addWeapon _radio2;		
 	};
 	
 // LOADOUT: HEAVY MG GUNNER
@@ -161,7 +145,7 @@ switch (_typeofUnit) do
 // LOADOUT: HEAVY MG ASSISTANT GUNNER
 	case "hmgag":
 	{
-		//_unit addWeapon _radio2;
+		_unit addWeapon _radio2;
 	};		
 
 // LOADOUT: MEDIUM AT GUNNER
@@ -173,7 +157,7 @@ switch (_typeofUnit) do
 // LOADOUT: MEDIUM AT ASSISTANT GUNNER	
 	case "matag":
 	{
-		//_unit addWeapon _radio2;
+		_unit addWeapon _radio2;
 	};	
 	
 // LOADOUT: HEAVY AT GUNNER
@@ -185,20 +169,19 @@ switch (_typeofUnit) do
 // LOADOUT: HEAVY AT ASSISTANT GUNNER	
 	case "hatag":
 	{
-		//_unit addWeapon _radio2;			
+		_unit addWeapon _radio2;			
 	};		
 	
 // LOADOUT: MORTAR GUNNER
 	case "mtrg":
 	{
-		_unit addWeapon _radio1;
 		_unit addWeapon _radio2;
 	};	
 	
 // LOADOUT: MORTAR ASSISTANT GUNNER
 	case "mtrag":
 	{
-		//_unit addWeapon _radio2;
+		_unit addWeapon _radio2;
 	};		
 	
 // LOADOUT: SNIPER
@@ -210,7 +193,7 @@ switch (_typeofUnit) do
 // LOADOUT: SPOTTER
 	case "sp":
 	{
-		//_unit addWeapon _radio2;
+		_unit addWeapon _radio2;
 	};			
 	
 // LOADOUT: GROUND VEHICLE CREW
@@ -219,7 +202,7 @@ switch (_typeofUnit) do
 		if(leader group _unit == _unit) then {
 				_unit addWeapon _radio1;
 			};
-		_unit addWeapon _radio2;
+			_unit addWeapon _radio2;
 	};			
 	
 // LOADOUT: AIR VEHICLE PILOTS
@@ -228,44 +211,44 @@ switch (_typeofUnit) do
 		if(leader group _unit == _unit) then {
 				_unit addWeapon _radio1;
 			};
-		_unit addWeapon _radio2;				
+			_unit addWeapon _radio2;				
 	};		
 	
 // LOADOUT: ENGINEER
 	case "eng":
 	{
-		if(leader group _unit == _unit) then {
-				_unit addWeapon _radio2;
-		};	
+			_unit addWeapon _radio2;	
 	};	
 		
 // LOADOUT: RIFLEMAN
 	case "r":
 	{
-		//_unit addWeapon _radio2;	
+		_unit addWeapon _radio2;	
 	};
 
 // LOADOUT: CARABINEER
 	case "car":
 	{
-		//_unit addWeapon _radio2;	
+		_unit addWeapon _radio2;	
 	};
 
 // LOADOUT: SUBMACHINEGUNNER
 	case "smg":
 	{
-		//_unit addWeapon _radio2;	
+		_unit addWeapon _radio2;	
 	};
 
 // LOADOUT: GRENADIER
 	case "gren":
 	{
-		//_unit addWeapon _radio2;	
+		_unit addWeapon _radio2;	
 	};
 
 // CARGO: CAR - room for 10 weapons and 50 cargo items
 	case "v_car":
 	{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
 		_unit addWeaponCargoGlobal [_radio2, 1];
 		_unit addWeaponCargoGlobal [_radio1, 1];
 	};	
@@ -273,6 +256,8 @@ switch (_typeofUnit) do
 // CARGO: TRUCK - room for 50 weapons and 200 cargo items
 	case "v_tr":
 	{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
 		_unit addWeaponCargoGlobal [_radio2, 4];
 		_unit addWeaponCargoGlobal [_radio1, 4];
 
@@ -281,6 +266,8 @@ switch (_typeofUnit) do
 // CARGO: IFV - room for 10 weapons and 100 cargo items
 	case "v_ifv":
 	{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
 		_unit addWeaponCargoGlobal [_radio2, 2];
 		_unit addWeaponCargoGlobal [_radio1, 2];
 
@@ -291,7 +278,7 @@ switch (_typeofUnit) do
    default
    {
 		_unit addWeapon _radio2;		
-		if (true) exitwith {player globalchat format ["DEBUG (f\common\folk_assignGear_acre.sqf): Unit = %1. Gear template %2 does not exist, used Rifleman instead.",_unit,_typeofunit]};
+		if (true) exitwith {player globalchat format ["DEBUG (f\common\folk_assignGear.sqf): Unit = %1. Gear template %2 does not exist, used Rifleman instead.",_unit,_typeofunit]};
    };
 
 

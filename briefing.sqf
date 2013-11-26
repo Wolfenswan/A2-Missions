@@ -21,13 +21,6 @@ private ["_unitfaction"];
 
 _unitfaction = toLower (faction player);
 
-// If the unitfaction is different from the group leader's faction, the latters faction is used
-if (_unitfaction != toLower (faction (leader group player))) then {_unitfaction = toLower (faction (leader group player))};
-
-// As PMC units are used as exchange medics and engineers, they are defaulted to the UN briefing.
-// Change "bis_un" to "bis_tk_gue" when using the TK Local Platoon
-if (_unitfaction == "pmc_baf") then {_unitfaction = "bis_un"}; 
-
 // DEBUG
 	if (f_var_debugMode == 1) then
 	{
@@ -178,7 +171,7 @@ if (_unitfaction == "bis_ger") exitwith {
 
 if (_unitfaction == "bis_tk_civ") exitwith {
 
-#include "f\common\f_briefing_tk_civ.sqf"
+#include "f\common\f_briefing_usmc.sqf"
 
 // DEBUG
 	if (f_var_debugMode == 1) then
@@ -195,7 +188,7 @@ if (_unitfaction == "bis_tk_civ") exitwith {
 
 if (_unitfaction == "bis_civ_special") exitwith {
 
-#include "f\common\f_briefing_civ_special.sqf"
+#include "f\common\f_briefing_usmc.sqf"
 
 // DEBUG
 	if (f_var_debugMode == 1) then
@@ -244,6 +237,20 @@ if (_unitfaction == "ins") exitwith {
 // USMC
 
 if (_unitfaction == "usmc") exitwith {
+
+#include "f\common\f_briefing_usmc.sqf"
+
+// DEBUG
+	if (f_var_debugMode == 1) then
+	{
+	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
+	};
+};
+
+
+// USMC
+
+if (_unitfaction == "civ") exitwith {
 
 #include "f\common\f_briefing_usmc.sqf"
 

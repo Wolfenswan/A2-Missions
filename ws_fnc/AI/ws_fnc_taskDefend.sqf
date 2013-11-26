@@ -113,7 +113,7 @@ if (_debug) then {{_mkr = createMarker [format ["%1-bpos",_x],_x];_mkr setMarker
 
 //Take position in regular buildings
 if (count _buildings > 0 && count _units > 0 && _civil) then {
-_units = [_units,_buildings,3] call ws_fnc_enterbuilding;
+_units = [_units,_buildings,2] call ws_fnc_enterbuilding;
 if (_debug) then {{_mkr = createMarker [format ["%1-bpos",_x],_x];_mkr setMarkerSize [0.4,0.4];_mkr setMarkerType "mil_dot";_mkr setMarkerColor "ColorWhite";}forEach _buildings;};
 };
 

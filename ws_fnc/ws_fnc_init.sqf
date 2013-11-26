@@ -14,7 +14,7 @@ This file only controls the debug for ws_fnc in ARMA 3. It is not necessary to c
 
 //DEBUG
  //Set this to true for debug markers and messages from all functions
-_debug = true;
+_debug = false;
 
 //Let's check if the functions are already compiled
 if (isNil "ws_fnc_compiled") then {ws_fnc_compiled = false};
@@ -34,24 +34,19 @@ if !(ws_game_a3) then {
 
 	//Debug Functions
 	ws_fnc_debugText = compile preprocessFile "ws_fnc\dbg\ws_fnc_debugText.sqf";
+	ws_fnc_copyPos = compile preprocessFile "ws_fnc\dbg\ws_fnc_copyPos.sqf";
 	ws_fnc_clipBoardCode = compile preprocessFile "ws_fnc\dbg\ws_fnc_clipBoardCode.sqf";
 	ws_fnc_countUnits = compile preprocessFile "ws_fnc\dbg\ws_fnc_countUnits.sqf";
 	ws_fnc_debugText = compile preprocessFile "ws_fnc\dbg\ws_fnc_debugText.sqf";
 	ws_fnc_typecheck = compile preprocessFile "ws_fnc\dbg\ws_fnc_typecheck.sqf";
 	call compile preprocessFile "ws_fnc\dbg\ws_fnc_debugTriggers.sqf";
 
-	//Misc Functions
+	//Tool Functions
 	ws_fnc_selectRandom = compile preprocessfile "ws_fnc\tools\ws_fnc_selectRandom.sqf";
+	ws_fnc_getPos = compile preprocessfile "ws_fnc\tools\ws_fnc_getPos.sqf";
+	ws_fnc_getBPos = compile preprocessfile "ws_fnc\tools\ws_fnc_getBPos.sqf";
 	ws_fnc_switchLights = compile preprocessfile "ws_fnc\tools\ws_fnc_switchLights.sqf";
 	ws_fnc_attachLight = compile preprocessfile "ws_fnc\tools\ws_fnc_attachLight.sqf";
-	ws_fnc_loadVehicle = compile preprocessfile "ws_fnc\tools\ws_fnc_loadVehicle.sqf";
-
-	//GetPos Functions
-	ws_fnc_getPos = compile preprocessfile "ws_fnc\getPos\ws_fnc_getPos.sqf";
-	ws_fnc_NearestRoadPos = compile preprocessfile "ws_fnc\getPos\ws_fnc_NearestRoadPos.sqf";
-	ws_fnc_NearestLandPos = compile preprocessfile "ws_fnc\getPos\ws_fnc_NearestLandPos.sqf";
-	ws_fnc_getPosInArea = compile preprocessfile "ws_fnc\getPos\ws_fnc_getPosInArea.sqf";
-	ws_fnc_getBPos = compile preprocessfile "ws_fnc\getPos\ws_fnc_getBPos.sqf";
 
 	//AI Functions
 	ws_fnc_enterBuilding = compile preprocessfile "ws_fnc\AI\ws_fnc_enterBuilding.sqf";
@@ -65,3 +60,4 @@ if !(ws_game_a3) then {
 };
 
 ws_fnc_compiled = true; publicVariable "ws_fnc_compiled";
+true

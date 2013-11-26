@@ -54,7 +54,7 @@ if (_count > 4) then {_code = _this select 4;};
 //Creating the group
 _grp = createGroup _side;
 
-_pos = [_this select 0,0,0,0,false,false,true] call ws_fnc_getPos;
+_pos = [_this select 0] call ws_fnc_getPos;
 //REWRITE: assign folk gear ?
 //Create the group leader around who the group assembles
 _unit = _grp createUnit [_forcedclasses select 0,_pos,[],0,"NONE"];
