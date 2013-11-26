@@ -12,6 +12,15 @@ class Header
 
 // ============================================================================================
 
+// F2 - Loading Screen
+// Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f3/en/)
+
+onLoadName = "*** Insert mission name here. ***";
+onLoadMission = "Made by Wolfenswan for Folk ARPS";
+loadScreen = "fa.paa";
+
+// ============================================================================================
+
 // F2 - Respawn Settings
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
@@ -47,8 +56,8 @@ class Params
                 texts[] = {"Off","On"};
                 default = 0;
                 code = "f_param_useBackpacks = %1";
-        }; 
-		
+        };
+
 // ============================================================================================
 
 // F2 - ACRE Support
@@ -63,7 +72,7 @@ class Params
                 texts[] = {"Off","On"};
                 default = 0;
                 code = "f_var_acre = %1";
-        }; 
+        };
 
 // ============================================================================================
 
@@ -78,7 +87,7 @@ class Params
                 texts[] = {"Off","On"};
                 default = 0;
                 code = "f_var_debugMode = %1";
-        }; 
+        };
 
 // ============================================================================================
 
@@ -92,7 +101,7 @@ class Params
                 texts[] = {$STR_f_param_timeOfDay_Option0,$STR_f_param_timeOfDay_Option1,$STR_f_param_timeOfDay_Option2,$STR_f_param_timeOfDay_Option3,$STR_f_param_timeOfDay_Option4,$STR_f_param_timeOfDay_Option5,$STR_f_param_timeOfDay_Option6,$STR_f_param_timeOfDay_Option7};
                 default = 3;
                 code = "f_param_timeOfDay = %1";
-        };   
+        };
         class f_param_weather
 	{
 		title = "$STR_f_param_weather";
@@ -107,22 +116,22 @@ class Params
 // F2 - AI Skill Selector (coop)
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-//	class f_param_AISkill_Friendly
-//	{
-//		title = "$STR_f_param_AISkill_Friendly";
-//		values[] = {0,1,2,3};
-//		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
-//		default = 2;
-//		code = "f_param_AISkill_Friendly = %1";
-//	};
-//	class f_param_AISkill_Enemy
-//	{
-//		title = "$STR_f_param_AISkill_Enemy";
-//		values[] = {0,1,2,3};
-//		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
-//		default = 2;
-//		code = "f_param_AISkill_Enemy = %1";
-//	};
+	class f_param_AISkill_Friendly
+	{
+		title = "$STR_f_param_AISkill_Friendly";
+		values[] = {0,1,2,3};
+		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
+		default = 1;
+		code = "f_param_AISkill_Friendly = %1";
+	};
+	class f_param_AISkill_Enemy
+	{
+		title = "$STR_f_param_AISkill_Enemy";
+		values[] = {0,1,2,3};
+		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
+		default = 1;
+		code = "f_param_AISkill_Enemy = %1";
+	};
 
 // ============================================================================================
 
@@ -179,7 +188,25 @@ class RscTitles {
 // #include "f\common\f_recog\recogOverlay.hpp"
 
 // ============================================================================================
+		class introImage
+  {
+    idd = -1;
+    movingEnable = false;
+    duration = 7;
+    fadein = 0;
+    name = "introImage";
+    controls[] = {"image1"};
 
+    class image1: RscPicture
+    {
+	style = 48 + 0x800;
+	x = -0.15;
+	y = -0.15;
+	w = 0.5;
+	h = 0.4;
+	text = "fa.paa";
+    };
+  };
 };
 
 // ============================================================================================

@@ -73,7 +73,7 @@ f_script_setLocalVars = [] execVM "f\common\f_setLocalVars.sqf";
 
 // ====================================================================================
 
-// F2 - Multiplayer Ending Controller 
+// F2 - Multiplayer Ending Controller
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
 f_endSelected = -1;
@@ -116,7 +116,7 @@ player setVariable ["BIS_noCoreConversations", true];
 
 // ====================================================================================
 
-// F2 - Dynamic View Distance 
+// F2 - Dynamic View Distance
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
 // f_viewDistance_default = 1250;
@@ -191,11 +191,11 @@ player setVariable ["BIS_noCoreConversations", true];
 // F2 - AI Skill Selector (coop)
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-// f_isFriendlyBLU = 1;
-// f_isFriendlyRES = 1;
-// f_isFriendlyOPF = 0;
-// f_isFriendlyCIV = 1;
-// [] execVM "f\common\f_setAISkill.sqf";
+f_isFriendlyBLU = 0;
+f_isFriendlyRES = 0;
+f_isFriendlyOPF = 0;
+f_isFriendlyCIV = 0;
+[] execVM "f\common\f_setAISkill.sqf";
 
 // ====================================================================================
 
