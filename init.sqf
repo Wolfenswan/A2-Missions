@@ -248,3 +248,6 @@ f_isFriendlyCIV = 0;
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
 [false] execVM "f\common\f_groupJoinAddOption.sqf";
+
+// Wolfenswan - post init
+[] execVM "ws_scripts\ws_post_init.sqf";

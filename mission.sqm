@@ -80,7 +80,7 @@ class Mission
 	randomSeed=3165154;
 	class Intel
 	{
-		briefingName="F2";
+		briefingName="F2_ws";
 		briefingDescription="*** Insert mission description here. ***";
 		startWeather=0.25;
 		forecastWeather=0.25;
