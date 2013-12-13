@@ -14,7 +14,7 @@ This file only controls the debug for ws_fnc in ARMA 3. It is not necessary to c
 
 //DEBUG
  //Set this to true for debug markers and messages from all functions
-_debug = true;
+_debug = false;
 
 //Let's check if the functions are already compiled
 if (isNil "ws_fnc_compiled") then {ws_fnc_compiled = false};
@@ -45,6 +45,7 @@ if !(ws_game_a3) then {
 	ws_fnc_switchLights = compile preprocessfile "ws_fnc\tools\ws_fnc_switchLights.sqf";
 	ws_fnc_attachLight = compile preprocessfile "ws_fnc\tools\ws_fnc_attachLight.sqf";
 	ws_fnc_loadVehicle = compile preprocessfile "ws_fnc\tools\ws_fnc_loadVehicle.sqf";
+	ws_fnc_collectmarkers = compile preprocessfile "ws_fnc\tools\ws_fnc_collectmarkers.sqf";
 
 	//GetPos Functions
 	ws_fnc_getPos = compile preprocessfile "ws_fnc\getPos\ws_fnc_getPos.sqf";

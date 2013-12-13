@@ -17,8 +17,8 @@ waitUntil {scriptDone f_processParamsArray};
 // SET KEY VARIABLES
 // Conditions are set in the parameters screen (during mission set-up).
 
-_timeOfDay = f_param_timeOfDay;
-_weather = f_param_weather;
+_timeOfDay = 7;
+_weather = 0;
 
 // ====================================================================================
 
@@ -65,7 +65,7 @@ switch (_timeOfDay) do
 // Night
 	case 7:
 	{
-		setDate [2007, 5, 11, 0, 0];
+		setDate [1981, 5, 11, 0, 0];
 	};
 };
 
@@ -93,8 +93,8 @@ switch (_weather) do
 // Light Fog
 	case 2:
 	{
-		_MissionOvercast = 00.60;
-		_MissionFog = 00.8125;
+		_MissionOvercast = 00.40;
+		_MissionFog = 00.2125;
 		_MissionRain = 00.00;
 	};
 // Heavy Fog
@@ -119,7 +119,7 @@ switch (_weather) do
 // If either _timeOfDay or _weather is set to 99, debug mode is enabled; in this case
 // conditions are set to Noon, Clear.
 
-if ((_timeOfDay == 99) || (_weather == 99)) then 
+if ((_timeOfDay == 99) || (_weather == 99)) then
 {
 	setDate [2007, 5, 11, 12, 0];
 	_MissionOvercast = 00.00;
@@ -150,24 +150,24 @@ sleep 10;
 
 f2_weather = [_MissionOvercast, _MissionRain, _MissionFog];
 
-"f2_weather" addPublicVariableEventHandler 
-{ 
+"f2_weather" addPublicVariableEventHandler
+{
 	_overcast 	= (_this select 1) select 0;
 	_rain 		= (_this select 1) select 1;
 	_fog 		= (_this select 1) select 2;
-	
+
 	10 setOvercast _overcast;
 	10 setRain _rain;
 	10 setFog _fog;
-}; 
+};
 
-if (isServer) then 
+if (isServer) then
 {
 	while {true} do
 	{
 		f2_weather = [overcast, rain, fog];
 		publicVariable "f2_weather";
-	
+
 		sleep 10;
 	};
 };

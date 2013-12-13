@@ -7,7 +7,7 @@
 //
 // USAGE
 // Minimal:
-// [position,side,size,[["forcedclasses"],["commonclasses"]] call ws_fnc_createGroup;
+// [position,side,size,[["forcedclasses"],["commonclasses"]]] call ws_fnc_createGroup;
 // Full:
 // [position,side,size,[["forcedclasses"],["commonclasses"]],{code}] call ws_fnc_createGroup;
 //

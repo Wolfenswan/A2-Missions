@@ -21,7 +21,7 @@
 
 _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
-*** Insert mission credits here. ***
+Made by Wolfenswan for Folk ARPS.
 <br/><br/>
 Made with F2 (http://www.ferstaberinde.com/f2/en/)
 "]];
@@ -33,7 +33,18 @@ Made with F2 (http://www.ferstaberinde.com/f2/en/)
 
 _adm = player createDiaryRecord ["diary", ["Administration","
 <br/>
-*** Insert information on administration and logistics here. ***
+TROOPS<br/>
+All SLs/FTLs carry IR strobes to mark friendly or enemy positions for the A10. More are in the crates at Petrovka.<br/><br/>
+PETROVKA<br/>
+<marker name='mkrHMMW'></marker>.<br/>
+<marker name='mkrM2'>5 X M2 - Tripods</marker> on tower-bunkers.<br/>
+<marker name='mkrA'>3 x crates w. ammo and supply</marker>.<br/>
+3 x M240 - HMMW - next to the ammo crates.<br/>
+<marker name='mkrF'>Earthern ramparts</marker> and <marker name='mkrb'>bunkers</marker>.<br/><br/>
+AERIAL<br/>
+1 x AH-1Z - no thermals/ATGM<br/>
+2 x A10 - no ATGM - currently being refuelled.<br/>
+1 x <marker name='mkrLog'>service point</marker> to rearm/refuel.
 "]];
 
 // ====================================================================================
@@ -43,21 +54,13 @@ _adm = player createDiaryRecord ["diary", ["Administration","
 
 _exe = player createDiaryRecord ["diary", ["Execution","
 <br/>
-COMMANDER'S INTENT
-<br/>
-*** Insert very short summary of plan here. ***
-<br/><br/>
-MOVEMENT PLAN
-<br/>
-*** Insert movement instructions here. ***
-<br/><br/>
 FIRE SUPPORT PLAN
 <br/>
-*** Insert fire support instructions here. ***
+The JTAC long due still hasn't arrived at the outpost, but we have plenty of IR flares.<br/>
 <br/><br/>
 SPECIAL TASKS
 <br/>
-*** Insert instructions for specific units here. ***
+You will be informed as they come up.
 "]];
 
 // ====================================================================================
@@ -67,7 +70,10 @@ SPECIAL TASKS
 
 _mis = player createDiaryRecord ["diary", ["Mission","
 <br/>
-*** Insert the mission here. ***
+1. You will be inserted <marker name='mkrTown'>here</marker>.<br/>
+2. Prepare your positions along the <marker name='mkrF'>defensive ramparts</marker> and <marker name='mkrB'>strongpoints</marker>.<br/>
+3. Hold off all attacks from the <marker name='mkrAttack'>North</marker>.<br/>
+4. <marker name='mkrReinf'>Reinforcements</marker> will arrive in about 30 minutes.<br/>
 "]];
 
 // ====================================================================================
@@ -77,15 +83,18 @@ _mis = player createDiaryRecord ["diary", ["Mission","
 
 _sit = player createDiaryRecord ["diary", ["Situation","
 <br/>
-*** Insert general information about the situation here.***
+In late november 1980s of the war for Chernarussian independence the socialist CHdKZ militia launched a massive attack all along the Takistani-Chernarrusian border. Supported by the socialist republic of Takistan the militia aims to retake areas of strategical importance, notably the country's biggest <marker name='mkrAirport'>airport</marker>. The USMC and CDF forces in the area were ill prepared for the attack and are currently scrambling units for a counter-attack. Your platoon is tasked to hold the northern town of <marker name='mkrTown_1'>Petrovka</marker> until <marker name='mkrReinf'>armored reinforcements</marker> can arrive.
 <br/><br/>
 ENEMY FORCES
 <br/>
-*** Insert information about enemy forces here.***
+CHdKZ militants - poorly equipped but highly motivated.<br/>
+They might be supported by Takistani regulars with heavier equipment.
 <br/><br/>
 FRIENDLY FORCES
 <br/>
-*** Insert information about friendly forces here.***
+USMC troops are protecting the other avenues of approach to the airport while CDF border guards are holding the line in the East.<br/><br/>
+NOTES<br/>
+The forests are still filled with <marker name='mkrMines'>mines</marker> left from the first revolutionary war and trip flares are set at the edge of the forest.
 "]];
 
 // ====================================================================================

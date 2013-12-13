@@ -107,12 +107,12 @@ player setVariable ["BIS_noCoreConversations", true];
 // F2 - Automatic Body Removal (FIFO)
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-// f_abrFIFOlength = 30;
-// f_abrDistance = 150;
-// f_abrFIFOmaxLength = 50;
-// f_doNotRemoveBodies = [];
-// ["fifo"] execVM "f\common\f_addRemoveBodyEH.sqf";
-// [] execVM "f\server\f_abrFIFO.sqf";
+f_abrFIFOlength = 30;
+f_abrDistance = 150;
+f_abrFIFOmaxLength = 50;
+f_doNotRemoveBodies = [];
+["fifo"] execVM "f\common\f_addRemoveBodyEH.sqf";
+[] execVM "f\server\f_abrFIFO.sqf";
 
 // ====================================================================================
 
@@ -150,7 +150,7 @@ player setVariable ["BIS_noCoreConversations", true];
 //[[GrpUS_CO,GrpUS_DC,GrpUS_ASL,GrpUS_BSL,GrpUS_CSL,GrpUS_A1,GrpUS_A2,GrpUS_A3,GrpUS_B1,GrpUS_B2,GrpUS_B3,GrpUS_C1,GrpUS_C2,GrpUS_C3,GrpUS_MMG1,GrpUS_MAT1,GrpUS_ST1,GrpUS_ENG1,GrpUS_MTR1,GrpUS_HAT1,GrpUS_HMG1,GrpUS_SAM1,GrpUS_IFV1,GrpUS_IFV2,GrpUS_IFV3,GrpUS_TNK1,GrpUS_TH1,GrpUS_TH2,GrpUS_AH1],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
 
 // USMC
-//[[GrpUSMC_CO,GrpUSMC_DC,GrpUSMC_ASL,GrpUSMC_BSL,GrpUSMC_CSL,GrpUSMC_A1,GrpUSMC_A2,GrpUSMC_A3,GrpUSMC_B1,GrpUSMC_B2,GrpUSMC_B3,GrpUSMC_C1,GrpUSMC_C2,GrpUSMC_C3,GrpUSMC_MMG1,GrpUSMC_MAT1,GrpUSMC_ST1,GrpUSMC_ENG1,GrpUSMC_MTR1,GrpUSMC_HAT1,GrpUSMC_HMG1,GrpUSMC_SAM1,GrpUSMC_IFV1,GrpUSMC_IFV2,GrpUSMC_IFV3,GrpUSMC_TNK1,GrpUSMC_TH1,GrpUSMC_TH2,GrpUSMC_AH1],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
+// [[GrpUSMC_CO,GrpUSMC_DC,GrpUSMC_ASL,GrpUSMC_BSL,GrpUSMC_CSL,GrpUSMC_A1,GrpUSMC_A2,GrpUSMC_A3,GrpUSMC_B1,GrpUSMC_B2,GrpUSMC_B3,GrpUSMC_C1,GrpUSMC_C2,GrpUSMC_C3,GrpUSMC_MMG1,GrpUSMC_MAT1,GrpUSMC_ST1,GrpUSMC_ENG1,GrpUSMC_MTR1,GrpUSMC_HAT1,GrpUSMC_HMG1,GrpUSMC_SAM1,GrpUSMC_IFV1,GrpUSMC_IFV2,GrpUSMC_IFV3,GrpUSMC_TNK1,GrpUSMC_TH1,GrpUSMC_TH2,GrpUSMC_AH1],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
 
 // CDF
 //[[GrpCDF_CO,GrpCDF_DC,GrpCDF_ASL,GrpCDF_BSL,GrpCDF_CSL,GrpCDF_A1,GrpCDF_A2,GrpCDF_A3,GrpCDF_B1,GrpCDF_B2,GrpCDF_B3,GrpCDF_C1,GrpCDF_C2,GrpCDF_C3,GrpCDF_MMG1,GrpCDF_MAT1,GrpCDF_ST1,GrpCDF_ENG1,GrpCDF_MTR1,GrpCDF_HAT1,GrpCDF_HMG1,GrpCDF_SAM1,GrpCDF_IFV1,GrpCDF_IFV2,GrpCDF_IFV3,GrpCDF_TNK1,GrpCDF_TH1,GrpCDF_TH2,GrpCDF_AH1],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
