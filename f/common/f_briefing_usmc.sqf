@@ -38,8 +38,10 @@ All SLs/FTLs carry IR strobes to mark friendly or enemy positions for the A10. M
 PETROVKA<br/>
 <marker name='mkrHMMW'></marker>.<br/>
 <marker name='mkrM2'>5 X M2 - Tripods</marker> on tower-bunkers.<br/>
-<marker name='mkrA'>3 x crates w. ammo and supply</marker>.<br/>
-3 x M240 - HMMW - next to the ammo crates.<br/>
+<marker name='mkrA'>3 x depots in the town, w. ammo crates and medical tents</marker>.<br/>
+3 x M240 - HMMW - next to the depots.<br/>
+1 x Ammo truck - near the central depot.<br/>
+1 x <marker name='mkrTower'>Illuminant tower</marker> w. search light on top.<br/>
 <marker name='mkrF'>Earthern ramparts</marker> and <marker name='mkrb'>bunkers</marker>.<br/><br/>
 AERIAL<br/>
 1 x AH-1Z - no thermals/ATGM<br/>
