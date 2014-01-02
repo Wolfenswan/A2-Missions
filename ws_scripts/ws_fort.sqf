@@ -28,6 +28,23 @@ case 2: {
 
 		_o = ("SearchLight") createVehicle [0,0,0]; _o attachTO [_b,[0,-0.5,10.32]]; _o setDir 180;
 	};
+
+	// Concrete block w. wooden ramps & bags shielding sides. Static weapon in center (ZU 23 by default)
+case 3: {
+	_static = "ZU23_CDF";
+	_height = 3; //Modify this depending on static used.
+
+	_b = "Land_ConcreteBlock" createVehicle [0,0,0];
+	_b setDir 0;
+
+	("Land_WoodenRamp" createVehicle [0,0,0]) attachTO [_b,[2,4.6,0.45]];
+	("Land_WoodenRamp" createVehicle [0,0,0]) attachTO [_b,[2,5.6,-0.1]];
+	_o = ("Land_BagFenceCorner") createVehicle [0,0,0]; _o attachTO [_b,[-3.6,-2,1.6]]; _o setDir 180;
+	_o = ("Land_BagFenceCorner") createVehicle [0,0,0]; _o attachTO [_b,[3.8,-2,1.6]]; _o setDir 90;
+	_o = ("Land_BagFenceLong") createVehicle [0,0,0]; _o attachTO [_b,[4,0,1.6]]; _o setDir 90;
+	_o = ("Land_BagFenceLong") createVehicle [0,0,0]; _o attachTO [_b,[-4,0,1.6]]; _o setDir 90;
+	_o = _static createVehicle [0,0,0]; _o attachTO [_b,[0,0,_height]]; _o setDir 180;
+	};
 };
 
 
