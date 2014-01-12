@@ -139,7 +139,7 @@ switch (_typeofUnit) do
 		{_unit addmagazine _grenade} foreach [1,2];
 		{_unit addmagazine _smokegrenade;} foreach [1,2];
 		{_unit addmagazine _smokegrenadegreen;} foreach [1];
-		_unit addWeapon "Binocular_Vector";
+		_unit addWeapon "Binocular";
 		_unit addweapon "ItemGPS";
 		if (_useBackpacks==1) then {
 			_unit addBackpack _bagmedium;
@@ -163,7 +163,7 @@ switch (_typeofUnit) do
 		{_unit addmagazine _grenade} foreach [1,2];
 		{_unit addmagazine _smokegrenade;} foreach [1,2];
 		{_unit addmagazine _smokegrenadegreen;} foreach [1];
-		_unit addWeapon "Binocular_Vector";
+		_unit addWeapon "Binocular";
 		_unit addweapon "ItemGPS";
 		if (_useBackpacks==1) then {
 			_unit addBackpack _bagmedium;
@@ -291,7 +291,7 @@ switch (_typeofUnit) do
 	{
 		{_unit addmagazine _riflemag} foreach [1,2,3,4,5,6];
 		_unit addweapon _rifle;
-		_unit addWeapon "Binocular_Vector";	
+		_unit addWeapon "Binocular";	
 		{_unit addmagazine _grenade} foreach [1];
 		{_unit addmagazine _smokegrenade;} foreach [1];
 		// Put ammo in backpack. If not OA unit, then should add directly to inv of unit instead.
@@ -323,7 +323,7 @@ switch (_typeofUnit) do
 	{
 		{_unit addmagazine _riflemag} foreach [1,2,3,4,5];
 		_unit addweapon _rifle;
-		_unit addWeapon "Binocular_Vector";
+		_unit addWeapon "Binocular";
 		{_unit addmagazine _smokegrenade;} foreach [1];		
 			// If not an OA unit, this attachment cannot carry an HMG 
 			_unit addBackpack _HMGmount;
@@ -344,7 +344,7 @@ switch (_typeofUnit) do
 	{
 		{_unit addmagazine _riflemag} foreach [1,2,3,4,5];
 		_unit addweapon _rifle;
-		_unit addWeapon "Binocular_Vector";
+		_unit addWeapon "Binocular";
 		{_unit addmagazine _smokegrenade;} foreach [1];		
 			// Put ammo in backpack. If not OA unit, then should add directly to inv of unit instead.
 		if (_useBackpacks==1) then {
@@ -377,7 +377,7 @@ switch (_typeofUnit) do
 	{
 		{_unit addmagazine _riflemag} foreach [1,2,3,4,5];
 		_unit addweapon _rifle;
-		_unit addWeapon "Binocular_Vector";	
+		_unit addWeapon "Binocular";	
 		{_unit addmagazine _smokegrenade;} foreach [1];	
 			// Put ammo in backpack. If not OA unit, then should add directly to inv of unit instead.
 		if (_useBackpacks==1) then {
@@ -408,7 +408,7 @@ switch (_typeofUnit) do
 		{_unit addmagazine _carbinemag} foreach [1,2,3,4,5];
 		_unit addweapon _carbine;
 		{_unit addmagazine _smokegrenade;} foreach [1];	
-		_unit addWeapon "Binocular_Vector";			
+		_unit addWeapon "Binocular";			
 			// If not an OA unit, this attachment cannot carry a mortar 
 			_unit addBackpack _MTRmount;
 	};		
@@ -427,7 +427,7 @@ switch (_typeofUnit) do
 	{
 		{_unit addmagazine _riflemag} foreach [1,2,3,4];
 		_unit addweapon _rifle;
-		_unit addWeapon "Binocular_Vector";	
+		_unit addWeapon "Binocular";	
 		{_unit addmagazine _smokegrenade;} foreach [1];
 	};			
 	
@@ -437,6 +437,7 @@ switch (_typeofUnit) do
 		{_unit addmagazine _smgmag} foreach [1,2,3,4];
 		_unit addweapon _smg;
 		{_unit addmagazine _smokegrenade;} foreach [1];
+		_unit addweapon "ItemGPS";
 	};			
 	
 // LOADOUT: AIR VEHICLE PILOTS
@@ -450,12 +451,10 @@ switch (_typeofUnit) do
 // LOADOUT: ENGINEER
 	case "eng":
 	{
-		{_unit addmagazine _carbinemag} foreach [1,2,3,4];
+		{_unit addmagazine _carbinemag} foreach [1,2,3,4,5,6];
 		_unit addweapon _carbine;
 		{_unit addmagazine _smokegrenade} foreach [1];
 		{_unit addmagazine _grenade} foreach [1];
-		{_unit addmagazine _satchel} foreach [1,2];
-		{_unit addmagazine _mine} foreach [1];
 			// Put ammo in backpack. If not OA unit, then should add directly to inv of unit instead.
 		if (_useBackpacks==1) then {
 			_unit addBackpack _baglarge;

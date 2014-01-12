@@ -1,5 +1,5 @@
-MISSION README
-==============
+README
+======
 
 Mission: [ Insert name of mission ]
 Version: [ Insert version here, format: N-N-N ]

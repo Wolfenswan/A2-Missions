@@ -76,7 +76,7 @@ if (_unitfaction == "bis_baf") exitwith {
 
 if (_unitfaction == "bis_tk") exitwith {
 
-#include "f\common\f_briefing_tk.sqf"
+#include "f\common\f_briefing_ru.sqf"
 
 // DEBUG
 	if (f_var_debugMode == 1) then
@@ -230,7 +230,7 @@ if (_unitfaction == "ru") exitwith {
 
 if (_unitfaction == "ins") exitwith {
 
-#include "f\common\f_briefing_ins.sqf"
+#include "f\common\f_briefing_ru.sqf"
 
 // DEBUG
 	if (f_var_debugMode == 1) then

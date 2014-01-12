@@ -172,6 +172,10 @@ if (isServer) then
 	};
 };
 
+if (ws_param_weather == 1) then {
+[_MissionFog,_MissionOvercast,_MissionRain] execVM "scripts\DynamicWeatherEffects.sqf";
+};
+
 // ====================================================================================
 
 if (true) exitWith {};

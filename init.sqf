@@ -71,9 +71,10 @@ f_script_setGroupIDs = [] execVM "f\common\folk_setGroupIDs.sqf";
 
 f_script_setLocalVars = [] execVM "f\common\f_setLocalVars.sqf";
 
+
 // ====================================================================================
 
-// F2 - Multiplayer Ending Controller
+// F2 - Multiplayer Ending Controller 
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
 f_endSelected = -1;
@@ -116,7 +117,7 @@ player setVariable ["BIS_noCoreConversations", true];
 
 // ====================================================================================
 
-// F2 - Dynamic View Distance
+// F2 - Dynamic View Distance 
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
 // f_viewDistance_default = 1250;
@@ -162,7 +163,7 @@ player setVariable ["BIS_noCoreConversations", true];
 //[[GrpTK_CO,GrpTK_DC,GrpTK_ASL,GrpTK_BSL,GrpTK_CSL,GrpTK_A1,GrpTK_A2,GrpTK_A3,GrpTK_B1,GrpTK_B2,GrpTK_B3,GrpTK_C1,GrpTK_C2,GrpTK_C3,GrpTK_MMG1,GrpTK_MAT1,GrpTK_ST1,GrpTK_ENG1,GrpTK_MTR1,GrpTK_HAT1,GrpTK_HMG1,GrpTK_SAM1,GrpTK_IFV1,GrpTK_IFV2,GrpTK_IFV3,GrpTK_TNK1,GrpTK_TH1,GrpTK_TH2,GrpTK_AH1],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
 
 // RUSSIAN ARMY
-//[[GrpRU_CO,GrpRU_DC,GrpRU_ASL,GrpRU_BSL,GrpRU_CSL,GrpRU_A1,GrpRU_A2,GrpRU_A3,GrpRU_B1,GrpRU_B2,GrpRU_B3,GrpRU_C1,GrpRU_C2,GrpRU_C3,GrpRU_MMG1,GrpRU_MAT1,GrpRU_ST1,GrpRU_ENG1,GrpRU_MTR1,GrpRU_HAT1,GrpRU_HMG1,GrpRU_SAM1,GrpRU_IFV1,GrpRU_IFV2,GrpRU_IFV3,GrpRU_TNK1,GrpRU_TH1,GrpRU_TH2,GrpRU_AH1],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
+[[GrpRU_CO,GrpRU_DC,GrpRU_ASL,GrpRU_BSL,GrpRU_CSL,GrpRU_A1,GrpRU_A2,GrpRU_A3,GrpRU_B1,GrpRU_B2,GrpRU_B3,GrpRU_C1,GrpRU_C2,GrpRU_C3,GrpRU_MMG1,GrpRU_MAT1,GrpRU_ENG1,GrpRU_ENG2,GrpRU_MAT2,GrpRU_MMG2,GrpRU_IFV1,GrpRU_TNK1,GrpRU_AH1],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
 
 // TK Insurgents
 //[[GrpINS_CO,GrpINS_DC,GrpINS_ASL,GrpINS_BSL,GrpINS_CSL,GrpINS_A1,GrpINS_A2,GrpINS_A3,GrpINS_B1,GrpINS_B2,GrpINS_B3,GrpINS_C1,GrpINS_C2,GrpINS_C3,GrpINS_MMG1,GrpINS_MAT1,GrpINS_ST1,GrpINS_ENG1,GrpINS_MTR1,GrpINS_HAT1,GrpINS_HMG1,GrpINS_SAM1,GrpINS_IFV1,GrpINS_IFV2,GrpINS_IFV3,GrpINS_TNK1,GrpINS_TH1,GrpINS_TH2,GrpINS_AH1],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
@@ -191,11 +192,11 @@ player setVariable ["BIS_noCoreConversations", true];
 // F2 - AI Skill Selector (coop)
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-f_isFriendlyBLU = 0;
-f_isFriendlyRES = 0;
-f_isFriendlyOPF = 0;
-f_isFriendlyCIV = 0;
-[] execVM "f\common\f_setAISkill.sqf";
+ f_isFriendlyBLU = 0;
+ f_isFriendlyRES = 1;
+ f_isFriendlyOPF = 1;
+ f_isFriendlyCIV = 1;
+ [] execVM "f\common\f_setAISkill.sqf";
 
 // ====================================================================================
 
@@ -248,3 +249,13 @@ f_isFriendlyCIV = 0;
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
 [false] execVM "f\common\f_groupJoinAddOption.sqf";
+
+BIS_Effects_Burn = compile preprocessFile "\ca\Data\ParticleEffects\SCRIPTS\destruction\burn.sqf"; 
+
+//Custom Scripts Wolfenswan
+[west,0.8] execVM "ws_bettervehicles.sqf";
+
+// Folk Ident
+// Credits: fer
+
+cutRsc ["introImage", "PLAIN", 1];
