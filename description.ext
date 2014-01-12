@@ -7,7 +7,7 @@ class Header
 {
 	gameType = Coop;
 	minPlayers = 1;
-	maxPlayers = 970;
+	maxPlayers = 540;
 };
 
 // ============================================================================================
@@ -15,9 +15,9 @@ class Header
 // F2 - Loading Screen
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f3/en/)
 
-onLoadName = "*** Insert mission name here. ***";
-onLoadMission = "Made by Wolfenswan for Folk ARPS";
-loadScreen = "fa.paa";
+onLoadName = "faco_co82_poctalon";
+onLoadMission = "faco_co82_poctalon";
+loadScreen = "img.jpg";
 
 // ============================================================================================
 
@@ -56,8 +56,8 @@ class Params
                 texts[] = {"Off","On"};
                 default = 0;
                 code = "f_param_useBackpacks = %1";
-        };
-
+        }; 
+		
 // ============================================================================================
 
 // F2 - ACRE Support
@@ -72,7 +72,7 @@ class Params
                 texts[] = {"Off","On"};
                 default = 0;
                 code = "f_var_acre = %1";
-        };
+        }; 
 
 // ============================================================================================
 
@@ -87,7 +87,7 @@ class Params
                 texts[] = {"Off","On"};
                 default = 0;
                 code = "f_var_debugMode = %1";
-        };
+        }; 
 
 // ============================================================================================
 
@@ -99,37 +99,46 @@ class Params
                 title = "$STR_f_param_timeOfDay";
                 values[] = {0,1,2,3,4,5,6,7};
                 texts[] = {$STR_f_param_timeOfDay_Option0,$STR_f_param_timeOfDay_Option1,$STR_f_param_timeOfDay_Option2,$STR_f_param_timeOfDay_Option3,$STR_f_param_timeOfDay_Option4,$STR_f_param_timeOfDay_Option5,$STR_f_param_timeOfDay_Option6,$STR_f_param_timeOfDay_Option7};
-                default = 3;
+                default = 4;
                 code = "f_param_timeOfDay = %1";
-        };
+        };   
         class f_param_weather
 	{
 		title = "$STR_f_param_weather";
 		values[] = {0,1,2,3,4};
 		texts[] = {$STR_f_param_weather_Option0,$STR_f_param_weather_Option1,$STR_f_param_weather_Option2,$STR_f_param_weather_Option3,$STR_f_param_weather_Option4};
-		default = 0;
+		default = 1;
 		code = "f_param_weather = %1";
         };
+		
+	class ws_param_weather
+	{
+		title = "Dynamically changing weather throughout mission";
+		values[] = {0,1};
+		texts[] = {"No","Yes"};
+		default = 1;
+		code = "ws_param_weather = %1";
+	};
 
 // ============================================================================================
 
 // F2 - AI Skill Selector (coop)
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-	class f_param_AISkill_Friendly
-	{
-		title = "$STR_f_param_AISkill_Friendly";
-		values[] = {0,1,2,3};
-		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
-		default = 1;
-		code = "f_param_AISkill_Friendly = %1";
-	};
+//	class f_param_AISkill_Friendly
+//	{
+//		title = "$STR_f_param_AISkill_Friendly";
+//		values[] = {0,1,2,3};
+//		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
+//		default = 2;
+//		code = "f_param_AISkill_Friendly = %1";
+//	};
 	class f_param_AISkill_Enemy
 	{
 		title = "$STR_f_param_AISkill_Enemy";
 		values[] = {0,1,2,3};
 		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
-		default = 1;
+		default = 2;
 		code = "f_param_AISkill_Enemy = %1";
 	};
 
@@ -156,10 +165,72 @@ class Params
 //	};
 
 // ============================================================================================
+		
+// WOLFENSWAN
 
-// F2 - End of Params code blocks.
-// WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
-
+	class f_param_uploadtime
+        {
+                title = "Time till upload is complete (seconds)";
+                values[] = {60,120,180,240,300,480,600,1200};
+                texts[] = {"60","120","180","240","300","480","600","1200"};
+                default = 480;
+                code = "f_param_uploadtime = %1";
+        };
+		
+	class f_param_marker
+        {
+                title = "Marker type for Wreck";
+                values[] = {0,1,2,3};
+                texts[] = {"Exact location","Ellipse w. Jitter","Big Ellipse w. Jitter","None (use grounded team)"};
+                default = 2;
+                code = "f_param_marker = %1";
+        };
+		
+	class f_param_diff
+        {
+                title = "Overall difficulty";
+                values[] = {1,2,3,4};
+                texts[] = {"Easy (<20 players)","Normal (<40 players)","Hard (40+ players)","Insane"};
+                default = 3;
+                code = "f_param_diff = %1";
+        }; 
+		
+	class f_param_fire
+        {
+                title = "Wreck is burning (visible smoke)";
+                values[] = {1,0};
+                texts[] = {"Yes","No"};
+                default = 1;
+                code = "f_param_fire = %1";
+        };
+		
+	class f_param_aa
+        {
+                title = "Allow ZU-23 trucks to spawn";
+                values[] = {1,0};
+                texts[] = {"Yes","No"};
+                default = 0;
+                code = "f_param_aa = %1";
+        };
+		
+	class f_param_broadcastaction
+        {
+                title = "Grounded pilot can only broadcast location within 250m of Wreck";
+                values[] = {1,0};
+                texts[] = {"Yes","No"};
+                default = 0;
+                code = "f_param_broadcastaction = %1";
+        };
+		
+//	class f_param_transferpower
+//        {
+//               title = "Only SL and FTLs can start transfer";
+//                values[] = {1,0};
+//                texts[] = {"Yes","No"};
+//                default = 0;
+//                code = "f_param_transferpower = %1";
+//        };
+	
 };
 
 // ============================================================================================
@@ -188,17 +259,17 @@ class RscTitles {
 // #include "f\common\f_recog\recogOverlay.hpp"
 
 // ============================================================================================
-		class introImage
-  {
-    idd = -1;
+class introImage
+  {	
+    idd = -1;	
     movingEnable = false;
     duration = 7;
     fadein = 0;
-    name = "introImage";
+    name = "introImage"; 
     controls[] = {"image1"};
 
     class image1: RscPicture
-    {
+    {	
 	style = 48 + 0x800;
 	x = -0.15;
 	y = -0.15;

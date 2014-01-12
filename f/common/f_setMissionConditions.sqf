@@ -86,7 +86,7 @@ switch (_weather) do
 // Overcast
 	case 1:
 	{
-		_MissionOvercast = 00.60;
+		_MissionOvercast = 00.80;
 		_MissionFog = 00.10;
 		_MissionRain = 00.00;
 	};
@@ -94,7 +94,7 @@ switch (_weather) do
 	case 2:
 	{
 		_MissionOvercast = 00.60;
-		_MissionFog = 00.8125;
+		_MissionFog = 00.5125;
 		_MissionRain = 00.00;
 	};
 // Heavy Fog
@@ -170,6 +170,10 @@ if (isServer) then
 	
 		sleep 10;
 	};
+};
+
+if (ws_param_weather == 1) then {
+[_MissionFog,_MissionOvercast,_MissionRain] execVM "scripts\DynamicWeatherEffects.sqf";
 };
 
 // ====================================================================================

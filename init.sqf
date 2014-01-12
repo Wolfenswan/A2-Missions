@@ -73,7 +73,7 @@ f_script_setLocalVars = [] execVM "f\common\f_setLocalVars.sqf";
 
 // ====================================================================================
 
-// F2 - Multiplayer Ending Controller
+// F2 - Multiplayer Ending Controller 
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
 f_endSelected = -1;
@@ -107,16 +107,16 @@ player setVariable ["BIS_noCoreConversations", true];
 // F2 - Automatic Body Removal (FIFO)
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-// f_abrFIFOlength = 30;
-// f_abrDistance = 150;
-// f_abrFIFOmaxLength = 50;
-// f_doNotRemoveBodies = [];
-// ["fifo"] execVM "f\common\f_addRemoveBodyEH.sqf";
-// [] execVM "f\server\f_abrFIFO.sqf";
+ f_abrFIFOlength = 30;
+ f_abrDistance = 150;
+ f_abrFIFOmaxLength = 50;
+ f_doNotRemoveBodies = [];
+ ["fifo"] execVM "f\common\f_addRemoveBodyEH.sqf";
+ [] execVM "f\server\f_abrFIFO.sqf";
 
 // ====================================================================================
 
-// F2 - Dynamic View Distance
+// F2 - Dynamic View Distance 
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
 // f_viewDistance_default = 1250;
@@ -137,7 +137,7 @@ player setVariable ["BIS_noCoreConversations", true];
 // F2 - Authorised Crew Type Check
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-// VehicleName addEventhandler ["GetIn", {[_this,["UnitType1","UnitType2"]] execVM "f\common\f_isAuthorisedCrewType.sqf"}];
+//[_x addEventhandler ["GetIn", {[_this,["west"]] execVM "f\common\f_isAuthorisedCrewType.sqf"}];] forEach [h1];
 
 // ====================================================================================
 
@@ -162,7 +162,7 @@ player setVariable ["BIS_noCoreConversations", true];
 //[[GrpTK_CO,GrpTK_DC,GrpTK_ASL,GrpTK_BSL,GrpTK_CSL,GrpTK_A1,GrpTK_A2,GrpTK_A3,GrpTK_B1,GrpTK_B2,GrpTK_B3,GrpTK_C1,GrpTK_C2,GrpTK_C3,GrpTK_MMG1,GrpTK_MAT1,GrpTK_ST1,GrpTK_ENG1,GrpTK_MTR1,GrpTK_HAT1,GrpTK_HMG1,GrpTK_SAM1,GrpTK_IFV1,GrpTK_IFV2,GrpTK_IFV3,GrpTK_TNK1,GrpTK_TH1,GrpTK_TH2,GrpTK_AH1],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
 
 // RUSSIAN ARMY
-//[[GrpRU_CO,GrpRU_DC,GrpRU_ASL,GrpRU_BSL,GrpRU_CSL,GrpRU_A1,GrpRU_A2,GrpRU_A3,GrpRU_B1,GrpRU_B2,GrpRU_B3,GrpRU_C1,GrpRU_C2,GrpRU_C3,GrpRU_MMG1,GrpRU_MAT1,GrpRU_ST1,GrpRU_ENG1,GrpRU_MTR1,GrpRU_HAT1,GrpRU_HMG1,GrpRU_SAM1,GrpRU_IFV1,GrpRU_IFV2,GrpRU_IFV3,GrpRU_TNK1,GrpRU_TH1,GrpRU_TH2,GrpRU_AH1],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
+[[GrpRU_CO,GrpRU_DC,GrpRU_ASL,GrpRU_BSL,GrpRU_CSL,GrpRU_A1,GrpRU_A2,GrpRU_A3,GrpRU_B1,GrpRU_B2,GrpRU_B3,GrpRU_C1,GrpRU_C2,GrpRU_C3,GrpRU_SF1,GrpRU_SF2,GrpRU_Grnd,GrpRU_TH1,GrpRU_TH2,GrpRU_TH3,GrpRU_AH1],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
 
 // TK Insurgents
 //[[GrpINS_CO,GrpINS_DC,GrpINS_ASL,GrpINS_BSL,GrpINS_CSL,GrpINS_A1,GrpINS_A2,GrpINS_A3,GrpINS_B1,GrpINS_B2,GrpINS_B3,GrpINS_C1,GrpINS_C2,GrpINS_C3,GrpINS_MMG1,GrpINS_MAT1,GrpINS_ST1,GrpINS_ENG1,GrpINS_MTR1,GrpINS_HAT1,GrpINS_HMG1,GrpINS_SAM1,GrpINS_IFV1,GrpINS_IFV2,GrpINS_IFV3,GrpINS_TNK1,GrpINS_TH1,GrpINS_TH2,GrpINS_AH1],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
@@ -174,7 +174,7 @@ player setVariable ["BIS_noCoreConversations", true];
 //[[GrpGUE_CO,GrpGUE_DC,GrpGUE_ASL,GrpGUE_BSL,GrpGUE_CSL,GrpGUE_A1,GrpGUE_A2,GrpGUE_A3,GrpGUE_B1,GrpGUE_B2,GrpGUE_B3,GrpGUE_C1,GrpGUE_C2,GrpGUE_C3,GrpGUE_MMG1,GrpGUE_MAT1,GrpGUE_ST1,GrpGUE_ENG1,GrpGUE_MTR1,GrpGUE_HAT1,GrpGUE_HMG1,GrpGUE_SAM1,GrpGUE_IFV1,GrpGUE_IFV2,GrpGUE_IFV3,GrpGUE_TNK1,GrpGUE_TH1,GrpGUE_TH2,GrpGUE_AH1],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
 
 // NAPA
-//[[GrpA2GUE_CO,GrpA2GUE_DC,GrpA2GUE_ASL,GrpA2GUE_BSL,GrpA2GUE_CSL,GrpA2GUE_A1,GrpA2GUE_A2,GrpA2GUE_A3,GrpA2GUE_B1,GrpA2GUE_B2,GrpA2GUE_B3,GrpA2GUE_C1,GrpA2GUE_C2,GrpA2GUE_C3,GrpA2GUE_MMG1,GrpA2GUE_MAT1,GrpA2GUE_ST1,GrpA2GUE_ENG1,GrpA2GUE_MTR1,GrpA2GUE_HAT1,GrpA2GUE_HMG1,GrpA2GUE_SAM1,GrpA2GUE_IFV1,GrpA2GUE_IFV2,GrpA2GUE_IFV3,GrpA2GUE_TNK1,GrpA2GUE_TH1,GrpA2GUE_TH2,GrpA2GUE_AH1],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
+//[[GrpA2GUE_CO,GrpA2GUE_DC,GrpA2GUE_ASL,GrpA2GUE_BSL,GrpA2GUE_CSL,GrpA2GUE_A1,GrpA2GUE_A2,GrpA2GUE_A3,GrpA2GUE_B1,GrpA2GUE_B2,GrpA2GUE_B3,GrpA2GUE_C1,GrpA2GUE_C2,GrpA2GUE_C3,GrpA2GUE_SAM1,GrpA2GUE_IFV1,GrpA2GUE_IFV2,GrpA2GUE_IFV3],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
 
 // UN
 //[[GrpUN_CO,GrpUN_DC,GrpUN_ASL,GrpUN_BSL,GrpUN_CSL,GrpUN_A1,GrpUN_A2,GrpUN_A3,GrpUN_B1,GrpUN_B2,GrpUN_B3,GrpUN_C1,GrpUN_C2,GrpUN_C3,GrpUN_MMG1,GrpUN_MAT1,GrpUN_ST1,GrpUN_ENG1,GrpUN_MTR1,GrpUN_HAT1,GrpUN_HMG1,GrpUN_SAM1,GrpUN_IFV1,GrpUN_IFV2,GrpUN_IFV3,GrpUN_TNK1,GrpUN_TH1,GrpUN_TH2,GrpUN_AH1],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
@@ -193,8 +193,8 @@ player setVariable ["BIS_noCoreConversations", true];
 
 f_isFriendlyBLU = 0;
 f_isFriendlyRES = 0;
-f_isFriendlyOPF = 0;
-f_isFriendlyCIV = 0;
+f_isFriendlyOPF = 1;
+f_isFriendlyCIV = 1;
 [] execVM "f\common\f_setAISkill.sqf";
 
 // ====================================================================================
@@ -247,4 +247,16 @@ f_isFriendlyCIV = 0;
 // F2 - Join Group Action
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
+
 [false] execVM "f\common\f_groupJoinAddOption.sqf";
+
+//Wolfenswan Init
+//After F2 is set up the mission relevant stuff is run
+
+ws_init = [] execVM "ws_scripts\ws_init.sqf";
+
+
+// FA Ident
+// Credits: harakka
+
+cutRsc ["introImage", "PLAIN", 1];

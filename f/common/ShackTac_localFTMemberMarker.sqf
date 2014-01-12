@@ -18,6 +18,8 @@ private ["_unit","_mkrType","_mkrColor","_mkrName","_mkr"];
 // SET KEY VARIABLES
 // Using variables passed to the script instance, we will create some local variables:
 
+if (group player == grpRu_Grnd) exitWith {};
+
 _unit = _this select 0;
 _mkrType = _this select 1;
 _mkrColor = _this select 2;

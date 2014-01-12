@@ -9,6 +9,8 @@
 
 // ====================================================================================
 
+if (group player == grpRu_Grnd) exitWith {};
+
 {
 	[_x, 0, "ColorYellow"] execVM "f\common\ShackTac_localFTMemberMarker.sqf";
 }
