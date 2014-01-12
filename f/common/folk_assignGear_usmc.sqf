@@ -92,7 +92,7 @@ _SNrifle = "M24_des_EP1"; _SNriflemag = "5Rnd_762x51_M24";																					/
 
 _mine = "Mine"; _satchel = "pipebomb";																										// Engineer
 
-_strobe = "IR_Strobe_Marker";
+_strobe = "IRStrobe";
 
 // ====================================================================================
 

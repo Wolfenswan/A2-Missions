@@ -50,9 +50,10 @@ _vspawnloop = {
 // 360 - 480 seconds
 for "_x" from 1 to 4 do {
 	[3 * _difmod,3] call _spawnloop;
-	sleep 90 + round random 30;
+	sleep 60 + round random 60;
 };
 
+ws_eicnt = {side _x == east} count allUnits;
 while {ws_eicnt > 9} do {
 	ws_eicnt = {side _x == east} count allUnits;
 	sleep 5;
@@ -62,10 +63,11 @@ while {ws_eicnt > 9} do {
 for "_x" from 1 to 6 do {
 	[2 * _difmod,3] call _spawnloop;
 	[2 + round (_difmod/2),5] call _TKspawnloop;
-	[4 + + round(_difmod/3)] call _vspawnloop;
+	[3 + round(_difmod/3)] call _vspawnloop;
 	sleep 120 + round random 60;
 };
 
+ws_eicnt = {side _x == east} count allUnits;
 while {ws_eicnt > 12} do {
 	ws_eicnt = {side _x == east} count allUnits;
 	sleep 5;
@@ -84,6 +86,7 @@ for "_x" from 1 to 6 do {
 	sleep 120 + round random 60;
 };
 
+ws_eicnt = {side _x == east} count allUnits;
 while {ws_eicnt > 12} do {
 	ws_eicnt = {side _x == east} count allUnits;
 	sleep 5;

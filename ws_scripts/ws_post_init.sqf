@@ -5,8 +5,7 @@ if (isServer) then {
 
 	sleep 90;
 	[] execVM "ws_Scripts\ws_wave.sqf";
-	sleep 10;
+	sleep 20;
 	ws_music = true; publicVariable "ws_music";
-	catch_trigger = "ws_ambient"; publicVariable "ws_ambient";
 
 };
