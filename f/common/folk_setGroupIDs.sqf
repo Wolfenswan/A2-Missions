@@ -2,6 +2,44 @@
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 // ====================================================================================
 
+// GROUP IDs: BRITISH ARMED FORCES
+// Automatically assigns intelligible names to groups
+
+GrpBAF_CO setGroupId ["British Army CO -","GroupColor0"];
+GrpBAF_DC setGroupId ["British Army DC -","GroupColor0"];
+GrpBAF_ASL setGroupId ["British Army ASL -","GroupColor0"];
+GrpBAF_A1 setGroupId ["British Army A1 -","GroupColor0"];
+GrpBAF_A2 setGroupId ["British Army A2 -","GroupColor0"];
+GrpBAF_A3 setGroupId ["British Army A3 -","GroupColor0"];
+GrpBAF_BSL setGroupId ["British Army BSL -","GroupColor0"];
+GrpBAF_B1 setGroupId ["British Army B1 -","GroupColor0"];
+GrpBAF_B2 setGroupId ["British Army B2 -","GroupColor0"];
+GrpBAF_B3 setGroupId ["British Army B3 -","GroupColor0"];
+GrpBAF_CSL setGroupId ["British Army CSL -","GroupColor0"];
+GrpBAF_C1 setGroupId ["British Army C1 -","GroupColor0"];
+GrpBAF_C2 setGroupId ["British Army C2 -","GroupColor0"];
+GrpBAF_C3 setGroupId ["British Army C3 -","GroupColor0"];
+GrpBAF_MMG1 setGroupId ["British Army MMG1 -","GroupColor0"];
+GrpBAF_MMG2 setGroupId ["British Army MMG1 -","GroupColor0"];
+GrpBAF_MAT1 setGroupId ["British Army MAT1 -","GroupColor0"];
+GrpBAF_ST1 setGroupId ["British Army ST1 -","GroupColor0"];
+GrpBAF_HMG1 setGroupId ["British Army HMG1 -","GroupColor0"];
+GrpBAF_MTR1 setGroupId ["British Army MTR1 -","GroupColor0"];
+GrpBAF_HAT1 setGroupId ["British Army HAT1 -","GroupColor0"];
+GrpBAF_SAM1 setGroupId ["British Army SAM1 -","GroupColor0"];
+GrpBAF_ENG1 setGroupId ["British Army ENG1 -","GroupColor0"];
+GrpBAF_IFV1 setGroupId ["British Army IFV1 -","GroupColor0"];
+GrpBAF_IFV2 setGroupId ["British Army IFV2 -","GroupColor0"];
+GrpBAF_IFV3 setGroupId ["British Army IFV3 -","GroupColor0"];
+GrpBAF_TNK1 setGroupId ["British Army TNK1 -","GroupColor0"];
+GrpBAF_TH1 setGroupId ["British Army TH1 -","GroupColor0"];
+GrpBAF_TH2 setGroupId ["British Army TH2 -","GroupColor0"];
+GrpBAF_AH1 setGroupId ["British Army AH1 -","GroupColor0"];
+
+// These IDs have been added for the Stub
+
+//===================================================================================== 
+
 // GROUP IDs: US ARMY
 // Automatically assigns intelligible names to groups
 
@@ -344,47 +382,12 @@ GrpA2INS_HAT1 setGroupId ["CHDKZ HAT1 -","GroupColor0"];
 GrpA2INS_SAM1 setGroupId ["CHDKZ SAM1 -","GroupColor0"];
 GrpA2INS_ENG1 setGroupId ["CHDKZ ENG1 -","GroupColor0"];
 GrpA2INS_IFV1 setGroupId ["CHDKZ IFV1 -","GroupColor0"];
-GrpA2INS_IFV2 setGroupId ["CHDKZ IFV2 -","GroupColor0"];
-GrpA2INS_IFV3 setGroupId ["CHDKZ IFV3 -","GroupColor0"];
+GrpA2INS_IFV2 setGroupId ["CHDKZ OFFROAD1 -","GroupColor0"];
+GrpA2INS_IFV3 setGroupId ["CHDKZ OFFROAD2 -","GroupColor0"];
 GrpA2INS_TNK1 setGroupId ["CHDKZ TNK1 -","GroupColor0"];
 GrpA2INS_TH1 setGroupId ["CHDKZ TH1 -","GroupColor0"];
 GrpA2INS_TH2 setGroupId ["CHDKZ TH2 -","GroupColor0"];
 GrpA2INS_AH1 setGroupId ["CHDKZ AH1 -","GroupColor0"];
-
-//===================================================================================== 
-
-// GROUP IDs: BRITISH ARMED FORCES
-// Automatically assigns intelligible names to groups
-
-GrpBAF_CO setGroupId ["British Army CO -","GroupColor0"];
-GrpBAF_DC setGroupId ["British Army DC -","GroupColor0"];
-GrpBAF_ASL setGroupId ["British Army ASL -","GroupColor0"];
-GrpBAF_A1 setGroupId ["British Army A1 -","GroupColor0"];
-GrpBAF_A2 setGroupId ["British Army A2 -","GroupColor0"];
-GrpBAF_A3 setGroupId ["British Army A3 -","GroupColor0"];
-GrpBAF_BSL setGroupId ["British Army BSL -","GroupColor0"];
-GrpBAF_B1 setGroupId ["British Army B1 -","GroupColor0"];
-GrpBAF_B2 setGroupId ["British Army B2 -","GroupColor0"];
-GrpBAF_B3 setGroupId ["British Army B3 -","GroupColor0"];
-GrpBAF_CSL setGroupId ["British Army CSL -","GroupColor0"];
-GrpBAF_C1 setGroupId ["British Army C1 -","GroupColor0"];
-GrpBAF_C2 setGroupId ["British Army C2 -","GroupColor0"];
-GrpBAF_C3 setGroupId ["British Army C3 -","GroupColor0"];
-GrpBAF_MMG1 setGroupId ["British Army MMG1 -","GroupColor0"];
-GrpBAF_MAT1 setGroupId ["British Army MAT1 -","GroupColor0"];
-GrpBAF_ST1 setGroupId ["British Army ST1 -","GroupColor0"];
-GrpBAF_HMG1 setGroupId ["British Army HMG1 -","GroupColor0"];
-GrpBAF_MTR1 setGroupId ["British Army MTR1 -","GroupColor0"];
-GrpBAF_HAT1 setGroupId ["British Army HAT1 -","GroupColor0"];
-GrpBAF_SAM1 setGroupId ["British Army SAM1 -","GroupColor0"];
-GrpBAF_ENG1 setGroupId ["British Army ENG1 -","GroupColor0"];
-GrpBAF_IFV1 setGroupId ["British Army IFV1 -","GroupColor0"];
-GrpBAF_IFV2 setGroupId ["British Army IFV2 -","GroupColor0"];
-GrpBAF_IFV3 setGroupId ["British Army IFV3 -","GroupColor0"];
-GrpBAF_TNK1 setGroupId ["British Army TNK1 -","GroupColor0"];
-GrpBAF_TH1 setGroupId ["British Army TH1 -","GroupColor0"];
-GrpBAF_TH2 setGroupId ["British Army TH2 -","GroupColor0"];
-GrpBAF_AH1 setGroupId ["British Army AH1 -","GroupColor0"];
 
 //===================================================================================== 
 

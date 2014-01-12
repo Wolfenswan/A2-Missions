@@ -21,9 +21,9 @@
 
 _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
-*** Insert mission credits here. ***
+Made by Wolfenswan for Folk ARPS.
 <br/><br/>
-Made with F2 (http://www.ferstaberinde.com/f2/en/)
+Made with F2 (http://www.ferstaberinde.com/f2/en/)<br/>
 "]];
 
 // ====================================================================================
@@ -33,7 +33,10 @@ Made with F2 (http://www.ferstaberinde.com/f2/en/)
 
 _adm = player createDiaryRecord ["diary", ["Administration","
 <br/>
-*** Insert information on administration and logistics here. ***
+TRANSPORT<br/>
+3 x Merlin - loaded with spare ammo<br/><br/>
+CAS<br/>
+1 x Wildcat on standby<br/>
 "]];
 
 // ====================================================================================
@@ -41,11 +44,12 @@ _adm = player createDiaryRecord ["diary", ["Administration","
 // NOTES: EXECUTION
 // The code below creates the execution sub-section of notes.
 
+/*
 _exe = player createDiaryRecord ["diary", ["Execution","
 <br/>
 COMMANDER'S INTENT
 <br/>
-*** Insert very short summary of plan here. ***
+Locate the ambushed convoy and deploy troops to eliminate any insurgent activity.
 <br/><br/>
 MOVEMENT PLAN
 <br/>
@@ -59,6 +63,7 @@ SPECIAL TASKS
 <br/>
 *** Insert instructions for specific units here. ***
 "]];
+*/
 
 // ====================================================================================
 
@@ -67,7 +72,10 @@ SPECIAL TASKS
 
 _mis = player createDiaryRecord ["diary", ["Mission","
 <br/>
-*** Insert the mission here. ***
+1. We start <marker name='mkrCarrier'>here.</marker><br/>
+2. The last known convoy location is <marker name='baf_conv'>here</marker>.<br/>
+3. We need to locate the convoy, re-establish contact with the UN forces and repell any CHZDK attackers.<br/>
+4. Decide whether to prioritize extracting the UN personnel or to eliminate the enemy.<br/>
 "]];
 
 // ====================================================================================
@@ -77,15 +85,20 @@ _mis = player createDiaryRecord ["diary", ["Mission","
 
 _sit = player createDiaryRecord ["diary", ["Situation","
 <br/>
-*** Insert general information about the situation here.***
+A UN convoy has been ambushed by CHDKZ. We are the only forces in the area able to muster a fast response team. The last time we were able to establish contact with the convoy it was around <marker name='baf_conv'>here</marker> but it will have moved on by now. We need to locate the convoy, deploy our troops to secure a perimeter and either repell the enemy or extract the UN personnel.
 <br/><br/>
 ENEMY FORCES
 <br/>
-*** Insert information about enemy forces here.***
+Motorized CHDKZ insurgents, possibly supported by a APC.
 <br/><br/>
 FRIENDLY FORCES
 <br/>
-*** Insert information about friendly forces here.***
+An understrength UN platoon that was traveling with the convoy.
+<br/><br/>
+NOTE
+Loosing more than 80% of our forces would be an international disaster and enough cause to abort the mission.<br/>
+For gameplay's sake it is suggested that BAF/UN start using a common CC once the British have troops at the convoy.
+<br/>
 "]];
 
 // ====================================================================================

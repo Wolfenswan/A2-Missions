@@ -407,8 +407,8 @@ switch (_typeofUnit) do
 	{
 		{_unit addmagazine _carbinemag} foreach [1,2,3,4,5];
 		_unit addweapon _carbine;
-		{_unit addmagazine _smokegrenade;} foreach [1];	
-		_unit addWeapon "Binocular_Vector";			
+		{_unit addmagazine _smokegrenade;} foreach [1,2];	
+		_unit addWeapon "Binocular";			
 			// If not an OA unit, this attachment cannot carry a mortar 
 			_unit addBackpack _MTRmount;
 	};		

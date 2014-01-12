@@ -47,7 +47,7 @@ _useACRE = paramsArray select 1;
 
 switch(_faction) do
 {
-case "pmc_baf":{_faction = "bis_un";};						// PMC get the UN gear
+case "pmc_baf":{_faction = "ins";};						// PMC get the UN gear
 case "civ":{_faction="bis_tk_civ";_useBackpacks=0;};		// CIV as TIK_CIV (note: no backpacks for A2 original units)
 case "civ_ru":{_faction="bis_tk_civ";_useBackpacks=0;};		// CIV_RU as TK_CIV (note: no backpacks for A2 original units)
 };
@@ -165,7 +165,7 @@ if (_faction == "gue") then {
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "bis_un") then {
-#include "folk_assignGear_un.sqf"
+#include "folk_assignGear_usmc.sqf"
 };
 
 // ====================================================================================

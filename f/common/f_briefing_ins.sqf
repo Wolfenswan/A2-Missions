@@ -21,7 +21,7 @@
 
 _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
-*** Insert mission credits here. ***
+Made by Wolfenswan for Folk ARPS. Uses Black Mamba's mortar script.
 <br/><br/>
 Made with F2 (http://www.ferstaberinde.com/f2/en/)
 "]];
@@ -33,7 +33,10 @@ Made with F2 (http://www.ferstaberinde.com/f2/en/)
 
 _adm = player createDiaryRecord ["diary", ["Administration","
 <br/>
-*** Insert information on administration and logistics here. ***
+Every squad starts mounted up in a transport truck.<br/>
+We have up to 2xOffroad DHSKM and 1xBRDM-2.<br/><br/>
+MORTAR:<br/>
+The mortar requires manual aiming and has a maximal reach of roughly 500m.
 "]];
 
 // ====================================================================================
@@ -41,6 +44,7 @@ _adm = player createDiaryRecord ["diary", ["Administration","
 // NOTES: EXECUTION
 // The code below creates the execution sub-section of notes.
 
+/*
 _exe = player createDiaryRecord ["diary", ["Execution","
 <br/>
 COMMANDER'S INTENT
@@ -59,6 +63,7 @@ SPECIAL TASKS
 <br/>
 *** Insert instructions for specific units here. ***
 "]];
+*/
 
 // ====================================================================================
 
@@ -67,7 +72,9 @@ SPECIAL TASKS
 
 _mis = player createDiaryRecord ["diary", ["Mission","
 <br/>
-*** Insert the mission here. ***
+1. We start at various locations surrounding the convoy side.<br/>
+2. Assess the situation and decide on the best plan to attack.<br/>
+3. Wipe out any USMC survivor at the <marker name='ins_conv'>convoy</marker> and secure the crates.<br/>
 "]];
 
 // ====================================================================================
@@ -77,15 +84,16 @@ _mis = player createDiaryRecord ["diary", ["Mission","
 
 _sit = player createDiaryRecord ["diary", ["Situation","
 <br/>
-*** Insert general information about the situation here.***
+Our comrades were able to ambush an <marker name='ins_conv'>USMC convoy</marker>, delivering weapons and poisened food to the hapless populace of Chernarus. They gave their lives for the cause but we will set out to finish what they begun. We need to kill all surviving imperialists in the area and repell any reinforcments that might come to their aid. The convoy was transporting weapons and other vile goods concealed as 'humanitarian aid'. Those dogs will surely try to cover the tracks and destroy the containers with explosives brought in by helicopters. Make sure that does not happen.
 <br/><br/>
 ENEMY FORCES
 <br/>
-*** Insert information about enemy forces here.***
+An understrength USMC platoon was guarding the convoy. Some of the armed vehicles protecting the convoy might still be operational.<br/>
+They are most likely going to send helicopters from their <marker name='mkrCarrier'>aircraft carrier</marker>.
 <br/><br/>
 FRIENDLY FORCES
 <br/>
-*** Insert information about friendly forces here.***
+None.<br/>
 "]];
 
 // ====================================================================================

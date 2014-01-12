@@ -2,7 +2,7 @@
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 // ====================================================================================
 
-// FACTION: USMC
+// FACTION: BRITISH ARMED FORCES
 
 // ====================================================================================
 
@@ -21,9 +21,9 @@
 
 _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
-*** Insert mission credits here. ***
+Made by Wolfenswan for Folk ARPS. Uses Black Mamba's mortar script.
 <br/><br/>
-Made with F2 (http://www.ferstaberinde.com/f2/en/)
+Made with F2 (http://www.ferstaberinde.com/f2/en/)<br/>
 "]];
 
 // ====================================================================================
@@ -33,7 +33,14 @@ Made with F2 (http://www.ferstaberinde.com/f2/en/)
 
 _adm = player createDiaryRecord ["diary", ["Administration","
 <br/>
-*** Insert information on administration and logistics here. ***
+CONVOY<br/>
+3 x HMMW M240<br/>
+2 x HMMW, 1 X HMMW Ambulance<br/>
+2 x MTVR<br/><br/>
+TRANSPORT<br/>
+3 x MH-60S - loaded with spare ammo and satchels<br/><br/>
+CAS<br/>
+1 x Cobra on standby<br/>
 "]];
 
 // ====================================================================================
@@ -41,11 +48,12 @@ _adm = player createDiaryRecord ["diary", ["Administration","
 // NOTES: EXECUTION
 // The code below creates the execution sub-section of notes.
 
+/*
 _exe = player createDiaryRecord ["diary", ["Execution","
 <br/>
 COMMANDER'S INTENT
 <br/>
-*** Insert very short summary of plan here. ***
+Locate the ambushed convoy and deploy troops to eliminate any insurgent activity.
 <br/><br/>
 MOVEMENT PLAN
 <br/>
@@ -59,6 +67,7 @@ SPECIAL TASKS
 <br/>
 *** Insert instructions for specific units here. ***
 "]];
+*/
 
 // ====================================================================================
 
@@ -67,7 +76,9 @@ SPECIAL TASKS
 
 _mis = player createDiaryRecord ["diary", ["Mission","
 <br/>
-*** Insert the mission here. ***
+1. The convoy is <marker name='ins_conv'>here</marker> and the helicopters launch from <marker name='mkrCarrier'>here.</marker><br/>
+2. The convoy needs to hold out against CHDKZ attackers until the helicopters can touch down and the satchel charges picked up.<br/>
+3. Destroy the <marker name='a1'>four crates</marker> next to the ammo truck and extract.<br/>
 "]];
 
 // ====================================================================================
@@ -77,15 +88,15 @@ _mis = player createDiaryRecord ["diary", ["Mission","
 
 _sit = player createDiaryRecord ["diary", ["Situation","
 <br/>
-*** Insert general information about the situation here.***
+One of <marker name='ins_conv'>our convoys</marker> has been ambushed by CHDKZ. We are sending transport helicopters from the <marker name='mkrCarrier'>HMS Gallows</marker> to extract all survivors of the escort force. The convoy was carrying several crates that were totally full of humanitarian aid stuff. We can't allow the Insurgents to get their grubby paws on that stuff, thus the helicopters will bring in the satchel charges we need to blow up the crates full of rice and teddy bears.
 <br/><br/>
 ENEMY FORCES
 <br/>
-*** Insert information about enemy forces here.***
+Motorized CHDKZ insurgents, possibly supported by a APC.
 <br/><br/>
 FRIENDLY FORCES
 <br/>
-*** Insert information about friendly forces here.***
+None<br/>
 "]];
 
 // ====================================================================================

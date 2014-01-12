@@ -2,7 +2,7 @@
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 // ====================================================================================
 
-// FACTION: UN
+// FACTION: BRITISH ARMED FORCES
 
 // ====================================================================================
 
@@ -21,9 +21,9 @@
 
 _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
-*** Insert mission credits here. ***
+Made by Wolfenswan for Folk ARPS.
 <br/><br/>
-Made with F2 (http://www.ferstaberinde.com/f2/en/)
+Made with F2 (http://www.ferstaberinde.com/f2/en/)<br/>
 "]];
 
 // ====================================================================================
@@ -33,7 +33,7 @@ Made with F2 (http://www.ferstaberinde.com/f2/en/)
 
 _adm = player createDiaryRecord ["diary", ["Administration","
 <br/>
-*** Insert information on administration and logistics here. ***
+The transport was being protected by 2xHMMWV MK240 and 1xHMMWV Mk19. Their guns might still be operational.
 "]];
 
 // ====================================================================================
@@ -41,11 +41,12 @@ _adm = player createDiaryRecord ["diary", ["Administration","
 // NOTES: EXECUTION
 // The code below creates the execution sub-section of notes.
 
+/*
 _exe = player createDiaryRecord ["diary", ["Execution","
 <br/>
 COMMANDER'S INTENT
 <br/>
-*** Insert very short summary of plan here. ***
+Locate the ambushed convoy and deploy troops to eliminate any insurgent activity.
 <br/><br/>
 MOVEMENT PLAN
 <br/>
@@ -59,6 +60,7 @@ SPECIAL TASKS
 <br/>
 *** Insert instructions for specific units here. ***
 "]];
+*/
 
 // ====================================================================================
 
@@ -67,7 +69,10 @@ SPECIAL TASKS
 
 _mis = player createDiaryRecord ["diary", ["Mission","
 <br/>
-*** Insert the mission here. ***
+1. We start <marker name='ins_conv'>here.</marker><br/>
+2. We need to dig in and repell any forces the CHDZK might send at us.<br/>
+3. If we're lucky the British will react and send reinforcements.<br/>
+4. As soon as we reestablish contact with the British forces we need to decide whether we are going to hold or evac.
 "]];
 
 // ====================================================================================
@@ -77,15 +82,19 @@ _mis = player createDiaryRecord ["diary", ["Mission","
 
 _sit = player createDiaryRecord ["diary", ["Situation","
 <br/>
-*** Insert general information about the situation here.***
+Our <marker name='ins_conv'>convoy</marker> has been ambushed by CHDKZ. We were able to repell the attackers but the convoy has been immobilized. THe only fast response unit in the area are the British forces on the <marker name='mkrCarrier'>HMS Sunder</marker>. We need to hold the position until they have managed to locate our position and established contact.
 <br/><br/>
 ENEMY FORCES
 <br/>
-*** Insert information about enemy forces here.***
+Motorized CHDKZ insurgents, possibly supported by a APC.
 <br/><br/>
 FRIENDLY FORCES
 <br/>
-*** Insert information about friendly forces here.***
+A heliborn British platoon.
+<br/><br/>
+NOTE<br/>
+For gameplay's sake it is suggested that BAF/UN start using a common CC once the British have troops at the convoy.
+<br/>
 "]];
 
 // ====================================================================================
