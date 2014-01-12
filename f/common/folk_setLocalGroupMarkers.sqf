@@ -51,8 +51,8 @@ switch (_unitfaction) do
 		["GrpUS_DC", 0, "DC", "ColorYellow"] spawn fnc_folk_localGroupMarker;
 		["GrpUS_ASL", 0, "ASL", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpUS_A1", 1, "A1", "ColorRed"] spawn fnc_folk_localGroupMarker;
-		["GrpUS_A2", 1, "A2", "ColorRed"] spawn fnc_folk_localGroupMarker;		
-		["GrpUS_A3", 1, "A3", "ColorRed"] spawn fnc_folk_localGroupMarker;		
+		["GrpUS_A2", 1, "A2", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpUS_A3", 1, "A3", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpUS_BSL", 0, "BSL", "ColorBlue"] spawn fnc_folk_localGroupMarker;
 		["GrpUS_B1", 1, "B1", "ColorBlue"] spawn fnc_folk_localGroupMarker;
 		["GrpUS_B2", 1, "B2", "ColorBlue"] spawn fnc_folk_localGroupMarker;
@@ -63,39 +63,39 @@ switch (_unitfaction) do
 		["GrpUS_C3", 1, "C3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
 		["GrpUS_MMG1", 2, "MMG1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpUS_MAT1", 3, "MAT1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
-		["GrpUS_ST1",  4, "ST1", "ColorOrange"] spawn fnc_folk_localGroupMarker;	
+		["GrpUS_ST1",  4, "ST1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpUS_HMG1",  2, "HMG1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
-		["GrpUS_MTR1",  5, "MTR1", "ColorOrange"] spawn fnc_folk_localGroupMarker;	
+		["GrpUS_MTR1",  5, "MTR1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpUS_HAT1",  3, "HAT1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpUS_SAM1",  3, "SAM1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpUS_ENG1",  6, "ENG1", "ColorYellow"] spawn fnc_folk_localGroupMarker;
-		["GrpUS_IFV1",  7, "IFV1", "ColorRed"] spawn fnc_folk_localGroupMarker;
-		["GrpUS_IFV2",  7, "IFV2", "ColorBlue"] spawn fnc_folk_localGroupMarker;	
-		["GrpUS_IFV3",  7, "IFV3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
-		["GrpUS_TNK1",  7, "TNK1", "ColorRed"] spawn fnc_folk_localGroupMarker;	
+		["GrpUS_APC1",  7, "APC1", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpUS_APC2",  7, "APC2", "ColorBlue"] spawn fnc_folk_localGroupMarker;
+		["GrpUS_APC3",  7, "APC3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
+		["GrpUS_TNK1",  7, "TNK1", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpUS_TH1",  8, "TH1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpUS_TH2",  8, "TH2", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpUS_AH1",  8, "AH1", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["UnitUS_CO_M", 0, "COM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitUS_DC_M", 0, "DCM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
-		["UnitUS_ASL_M", 0, "AM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;		
+		["UnitUS_ASL_M", 0, "AM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitUS_BSL_M", 0, "BM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitUS_CSL_M", 0, "CM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 	};
 
 // ====================================================================================
-	
+
 // USMC
 // Markers seen by players in USMC slots.
-	
+
 	case "usmc":
 	{
 		["GrpUSMC_CO", 0, "CO", "ColorYellow"] spawn fnc_folk_localGroupMarker;
 		["GrpUSMC_DC", 0, "DC", "ColorYellow"] spawn fnc_folk_localGroupMarker;
 		["GrpUSMC_ASL", 0, "ASL", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpUSMC_A1", 1, "A1", "ColorRed"] spawn fnc_folk_localGroupMarker;
-		["GrpUSMC_A2", 1, "A2", "ColorRed"] spawn fnc_folk_localGroupMarker;		
-		["GrpUSMC_A3", 1, "A3", "ColorRed"] spawn fnc_folk_localGroupMarker;		
+		["GrpUSMC_A2", 1, "A2", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpUSMC_A3", 1, "A3", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpUSMC_BSL", 0, "BSL", "ColorBlue"] spawn fnc_folk_localGroupMarker;
 		["GrpUSMC_B1", 1, "B1", "ColorBlue"] spawn fnc_folk_localGroupMarker;
 		["GrpUSMC_B2", 1, "B2", "ColorBlue"] spawn fnc_folk_localGroupMarker;
@@ -106,39 +106,39 @@ switch (_unitfaction) do
 		["GrpUSMC_C3", 1, "C3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
 		["GrpUSMC_MMG1", 2, "MMG1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpUSMC_MAT1", 3, "MAT1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
-		["GrpUSMC_ST1",  4, "ST1", "ColorOrange"] spawn fnc_folk_localGroupMarker;	
+		["GrpUSMC_ST1",  4, "ST1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpUSMC_HMG1",  2, "HMG1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
-		["GrpUSMC_MTR1",  5, "MTR1", "ColorOrange"] spawn fnc_folk_localGroupMarker;	
+		["GrpUSMC_MTR1",  5, "MTR1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpUSMC_HAT1",  3, "HAT1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpUSMC_SAM1",  3, "SAM1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpUSMC_ENG1",  6, "ENG1", "ColorYellow"] spawn fnc_folk_localGroupMarker;
-		["GrpUSMC_IFV1",  7, "IFV1", "ColorRed"] spawn fnc_folk_localGroupMarker;
-		["GrpUSMC_IFV2",  7, "IFV2", "ColorBlue"] spawn fnc_folk_localGroupMarker;	
-		["GrpUSMC_IFV3",  7, "IFV3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
-		["GrpUSMC_TNK1",  7, "TNK1", "ColorRed"] spawn fnc_folk_localGroupMarker;	
+		["GrpUSMC_APC1",  7, "APC1", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpUSMC_APC2",  7, "APC2", "ColorBlue"] spawn fnc_folk_localGroupMarker;
+		["GrpUSMC_APC3",  7, "APC3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
+		["GrpUSMC_TNK1",  7, "TNK1", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpUSMC_TH1",  8, "TH1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpUSMC_TH2",  8, "TH2", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpUSMC_AH1",  8, "AH1", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["UnitUSMC_CO_M", 0, "COM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitUSMC_DC_M", 0, "DCM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
-		["UnitUSMC_ASL_M", 0, "AM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;		
+		["UnitUSMC_ASL_M", 0, "AM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitUSMC_BSL_M", 0, "BM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitUSMC_CSL_M", 0, "CM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 	};
 
 // ====================================================================================
-	
+
 // CDF
 // Markers seen by players in CDF slots.
-	
+
 	case "cdf":
 	{
 		["GrpCDF_CO", 0, "CO", "ColorYellow"] spawn fnc_folk_localGroupMarker;
 		["GrpCDF_DC", 0, "DC", "ColorYellow"] spawn fnc_folk_localGroupMarker;
 		["GrpCDF_ASL", 0, "ASL", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpCDF_A1", 1, "A1", "ColorRed"] spawn fnc_folk_localGroupMarker;
-		["GrpCDF_A2", 1, "A2", "ColorRed"] spawn fnc_folk_localGroupMarker;		
-		["GrpCDF_A3", 1, "A3", "ColorRed"] spawn fnc_folk_localGroupMarker;		
+		["GrpCDF_A2", 1, "A2", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpCDF_A3", 1, "A3", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpCDF_BSL", 0, "BSL", "ColorBlue"] spawn fnc_folk_localGroupMarker;
 		["GrpCDF_B1", 1, "B1", "ColorBlue"] spawn fnc_folk_localGroupMarker;
 		["GrpCDF_B2", 1, "B2", "ColorBlue"] spawn fnc_folk_localGroupMarker;
@@ -149,22 +149,22 @@ switch (_unitfaction) do
 		["GrpCDF_C3", 1, "C3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
 		["GrpCDF_MMG1", 2, "MMG1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpCDF_MAT1", 3, "MAT1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
-		["GrpCDF_ST1",  4, "ST1", "ColorOrange"] spawn fnc_folk_localGroupMarker;	
+		["GrpCDF_ST1",  4, "ST1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpCDF_HMG1",  2, "HMG1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
-		["GrpCDF_MTR1",  5, "MTR1", "ColorOrange"] spawn fnc_folk_localGroupMarker;	
+		["GrpCDF_MTR1",  5, "MTR1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpCDF_HAT1",  3, "HAT1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpCDF_SAM1",  3, "SAM1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpCDF_ENG1",  6, "ENG1", "ColorYellow"] spawn fnc_folk_localGroupMarker;
-		["GrpCDF_IFV1",  7, "IFV1", "ColorRed"] spawn fnc_folk_localGroupMarker;
-		["GrpCDF_IFV2",  7, "IFV2", "ColorBlue"] spawn fnc_folk_localGroupMarker;	
-		["GrpCDF_IFV3",  7, "IFV3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
-		["GrpCDF_TNK1",  7, "TNK1", "ColorRed"] spawn fnc_folk_localGroupMarker;	
+		["GrpCDF_APC1",  7, "APC1", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpCDF_APC2",  7, "APC2", "ColorBlue"] spawn fnc_folk_localGroupMarker;
+		["GrpCDF_APC3",  7, "APC3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
+		["GrpCDF_TNK1",  7, "TNK1", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpCDF_TH1",  8, "TH1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpCDF_TH2",  8, "TH2", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpCDF_AH1",  8, "AH1", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["UnitCDF_CO_M", 0, "COM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitCDF_DC_M", 0, "DCM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
-		["UnitCDF_ASL_M", 0, "AM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;		
+		["UnitCDF_ASL_M", 0, "AM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitCDF_BSL_M", 0, "BM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitCDF_CSL_M", 0, "CM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 	};
@@ -180,8 +180,8 @@ switch (_unitfaction) do
 		["GrpTK_DC", 0, "DC", "ColorYellow"] spawn fnc_folk_localGroupMarker;
 		["GrpTK_ASL", 0, "ASL", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpTK_A1", 1, "A1", "ColorRed"] spawn fnc_folk_localGroupMarker;
-		["GrpTK_A2", 1, "A2", "ColorRed"] spawn fnc_folk_localGroupMarker;		
-		["GrpTK_A3", 1, "A3", "ColorRed"] spawn fnc_folk_localGroupMarker;		
+		["GrpTK_A2", 1, "A2", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpTK_A3", 1, "A3", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpTK_BSL", 0, "BSL", "ColorBlue"] spawn fnc_folk_localGroupMarker;
 		["GrpTK_B1", 1, "B1", "ColorBlue"] spawn fnc_folk_localGroupMarker;
 		["GrpTK_B2", 1, "B2", "ColorBlue"] spawn fnc_folk_localGroupMarker;
@@ -192,39 +192,41 @@ switch (_unitfaction) do
 		["GrpTK_C3", 1, "C3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
 		["GrpTK_MMG1", 2, "MMG1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpTK_MAT1", 3, "MAT1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
+		["GrpTK_MAT2", 3, "MAT2", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpTK_ST1",  4, "ST1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpTK_HMG1",  2, "HMG1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
-		["GrpTK_MTR1",  5, "MTR1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
+		["GrpTK_MTR1",  5, "ART1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpTK_HAT1",  3, "HAT1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpTK_SAM1",  3, "SAM1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpTK_ENG1",  6, "ENG1", "ColorYellow"] spawn fnc_folk_localGroupMarker;
-		["GrpTK_IFV1",  7, "IFV1", "ColorRed"] spawn fnc_folk_localGroupMarker;
-		["GrpTK_IFV2",  7, "IFV2", "ColorBlue"] spawn fnc_folk_localGroupMarker;	
-		["GrpTK_IFV3",  7, "IFV3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
-		["GrpTK_TNK1",  7, "TNK1", "ColorRed"] spawn fnc_folk_localGroupMarker;	
+		["GrpTK_APC1",  7, "APC1", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpTK_APC2",  7, "APC2", "ColorBlue"] spawn fnc_folk_localGroupMarker;
+		["GrpTK_APC3",  7, "APC3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
+		["GrpTK_TNK1",  7, "TNK1", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpTK_TNK2",  7, "TNK2", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpTK_TH1",  8, "TH1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpTK_TH2",  8, "TH2", "ColorOrange"] spawn fnc_folk_localGroupMarker;
-		["GrpTK_AH1",  8, "AH1", "ColorRed"] spawn fnc_folk_localGroupMarker;			
+		["GrpTK_AH1",  8, "AH1", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["UnitTK_CO_M", 0, "COM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitTK_DC_M", 0, "DCM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
-		["UnitTK_ASL_M", 0, "AM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;		
+		["UnitTK_ASL_M", 0, "AM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitTK_BSL_M", 0, "BM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitTK_CSL_M", 0, "CM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 	};
-	
+
 // ====================================================================================
-	
+
 // MARKERS: RUSSIA
 // Markers seen by players in RUSSIA slots.
-	
+
 	case "ru":
 	{
 		["GrpRU_CO", 0, "CO", "ColorYellow"] spawn fnc_folk_localGroupMarker;
 		["GrpRU_DC", 0, "DC", "ColorYellow"] spawn fnc_folk_localGroupMarker;
 		["GrpRU_ASL", 0, "ASL", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpRU_A1", 1, "A1", "ColorRed"] spawn fnc_folk_localGroupMarker;
-		["GrpRU_A2", 1, "A2", "ColorRed"] spawn fnc_folk_localGroupMarker;		
-		["GrpRU_A3", 1, "A3", "ColorRed"] spawn fnc_folk_localGroupMarker;		
+		["GrpRU_A2", 1, "A2", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpRU_A3", 1, "A3", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpRU_BSL", 0, "BSL", "ColorBlue"] spawn fnc_folk_localGroupMarker;
 		["GrpRU_B1", 1, "B1", "ColorBlue"] spawn fnc_folk_localGroupMarker;
 		["GrpRU_B2", 1, "B2", "ColorBlue"] spawn fnc_folk_localGroupMarker;
@@ -241,16 +243,16 @@ switch (_unitfaction) do
 		["GrpRU_HAT1",  3, "HAT1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpRU_SAM1",  3, "SAM1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpRU_ENG1",  6, "ENG1", "ColorYellow"] spawn fnc_folk_localGroupMarker;
-		["GrpRU_IFV1",  7, "IFV1", "ColorRed"] spawn fnc_folk_localGroupMarker;
-		["GrpRU_IFV2",  7, "IFV2", "ColorBlue"] spawn fnc_folk_localGroupMarker;	
-		["GrpRU_IFV3",  7, "IFV3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
-		["GrpRU_TNK1",  7, "TNK1", "ColorRed"] spawn fnc_folk_localGroupMarker;	
+		["GrpRU_APC1",  7, "APC1", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpRU_APC2",  7, "APC2", "ColorBlue"] spawn fnc_folk_localGroupMarker;
+		["GrpRU_APC3",  7, "APC3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
+		["GrpRU_TNK1",  7, "TNK1", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpRU_TH1",  8, "TH1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpRU_TH2",  8, "TH2", "ColorOrange"] spawn fnc_folk_localGroupMarker;
-		["GrpRU_AH1",  8, "AH1", "ColorRed"] spawn fnc_folk_localGroupMarker;			
+		["GrpRU_AH1",  8, "AH1", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["UnitRU_CO_M", 0, "COM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitRU_DC_M", 0, "DCM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
-		["UnitRU_ASL_M", 0, "AM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;		
+		["UnitRU_ASL_M", 0, "AM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitRU_BSL_M", 0, "BM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitRU_CSL_M", 0, "CM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 	};
@@ -266,8 +268,8 @@ switch (_unitfaction) do
 		["GrpINS_DC", 0, "DC", "ColorYellow"] spawn fnc_folk_localGroupMarker;
 		["GrpINS_ASL", 0, "ASL", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpINS_A1", 1, "A1", "ColorRed"] spawn fnc_folk_localGroupMarker;
-		["GrpINS_A2", 1, "A2", "ColorRed"] spawn fnc_folk_localGroupMarker;		
-		["GrpINS_A3", 1, "A3", "ColorRed"] spawn fnc_folk_localGroupMarker;		
+		["GrpINS_A2", 1, "A2", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpINS_A3", 1, "A3", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpINS_BSL", 0, "BSL", "ColorBlue"] spawn fnc_folk_localGroupMarker;
 		["GrpINS_B1", 1, "B1", "ColorBlue"] spawn fnc_folk_localGroupMarker;
 		["GrpINS_B2", 1, "B2", "ColorBlue"] spawn fnc_folk_localGroupMarker;
@@ -284,20 +286,20 @@ switch (_unitfaction) do
 		["GrpINS_HAT1",  3, "HAT1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpINS_SAM1",  3, "SAM1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpINS_ENG1",  6, "ENG1", "ColorYellow"] spawn fnc_folk_localGroupMarker;
-		["GrpINS_IFV1",  7, "IFV1", "ColorRed"] spawn fnc_folk_localGroupMarker;
-		["GrpINS_IFV2",  7, "IFV2", "ColorBlue"] spawn fnc_folk_localGroupMarker;	
-		["GrpINS_IFV3",  7, "IFV3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
-		["GrpINS_TNK1",  7, "TNK1", "ColorRed"] spawn fnc_folk_localGroupMarker;	
+		["GrpINS_APC1",  7, "APC1", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpINS_APC2",  7, "APC2", "ColorBlue"] spawn fnc_folk_localGroupMarker;
+		["GrpINS_APC3",  7, "APC3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
+		["GrpINS_TNK1",  7, "TNK1", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpINS_TH1",  8, "TH1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpINS_TH2",  8, "TH2", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpINS_AH1",  8, "AH1", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["UnitINS_CO_M", 0, "COM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
-		["UnitINS_DC_M", 0, "DCM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;				
-		["UnitINS_ASL_M", 0, "AM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;		
+		["UnitINS_DC_M", 0, "DCM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
+		["UnitINS_ASL_M", 0, "AM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitINS_BSL_M", 0, "BM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitINS_CSL_M", 0, "CM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 	};
-	
+
 // ====================================================================================
 
 // MARKERS: INSURGENT
@@ -309,8 +311,8 @@ switch (_unitfaction) do
 		["GrpA2INS_DC", 0, "DC", "ColorYellow"] spawn fnc_folk_localGroupMarker;
 		["GrpA2INS_ASL", 0, "ASL", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpA2INS_A1", 1, "A1", "ColorRed"] spawn fnc_folk_localGroupMarker;
-		["GrpA2INS_A2", 1, "A2", "ColorRed"] spawn fnc_folk_localGroupMarker;		
-		["GrpA2INS_A3", 1, "A3", "ColorRed"] spawn fnc_folk_localGroupMarker;		
+		["GrpA2INS_A2", 1, "A2", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpA2INS_A3", 1, "A3", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpA2INS_BSL", 0, "BSL", "ColorBlue"] spawn fnc_folk_localGroupMarker;
 		["GrpA2INS_B1", 1, "B1", "ColorBlue"] spawn fnc_folk_localGroupMarker;
 		["GrpA2INS_B2", 1, "B2", "ColorBlue"] spawn fnc_folk_localGroupMarker;
@@ -327,20 +329,20 @@ switch (_unitfaction) do
 		["GrpA2INS_HAT1",  3, "HAT1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpA2INS_SAM1",  3, "SAM1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpA2INS_ENG1",  6, "ENG1", "ColorYellow"] spawn fnc_folk_localGroupMarker;
-		["GrpA2INS_IFV1",  7, "IFV1", "ColorRed"] spawn fnc_folk_localGroupMarker;
-		["GrpA2INS_IFV2",  7, "IFV2", "ColorBlue"] spawn fnc_folk_localGroupMarker;	
-		["GrpA2INS_IFV3",  7, "IFV3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
-		["GrpA2INS_TNK1",  7, "TNK1", "ColorRed"] spawn fnc_folk_localGroupMarker;	
+		["GrpA2INS_APC1",  7, "APC1", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpA2INS_APC2",  7, "APC2", "ColorBlue"] spawn fnc_folk_localGroupMarker;
+		["GrpA2INS_APC3",  7, "APC3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
+		["GrpA2INS_TNK1",  7, "TNK1", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpA2INS_TH1",  8, "TH1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpA2INS_TH2",  8, "TH2", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpA2INS_AH1",  8, "AH1", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["UnitA2INS_CO_M", 0, "COM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
-		["UnitA2INS_DC_M", 0, "DCM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;				
-		["UnitA2INS_ASL_M", 0, "AM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;		
+		["UnitA2INS_DC_M", 0, "DCM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
+		["UnitA2INS_ASL_M", 0, "AM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitA2INS_BSL_M", 0, "BM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitA2INS_CSL_M", 0, "CM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 	};
-       
+
 // ====================================================================================
 
 // MARKERS: TAKISTANI LOCALS (INDEPENDENT)
@@ -352,8 +354,8 @@ switch (_unitfaction) do
 		["GrpGUE_DC", 0, "DC", "ColorYellow"] spawn fnc_folk_localGroupMarker;
 		["GrpGUE_ASL", 0, "ASL", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpGUE_A1", 1, "A1", "ColorRed"] spawn fnc_folk_localGroupMarker;
-		["GrpGUE_A2", 1, "A2", "ColorRed"] spawn fnc_folk_localGroupMarker;		
-		["GrpGUE_A3", 1, "A3", "ColorRed"] spawn fnc_folk_localGroupMarker;		
+		["GrpGUE_A2", 1, "A2", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpGUE_A3", 1, "A3", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpGUE_BSL", 0, "BSL", "ColorBlue"] spawn fnc_folk_localGroupMarker;
 		["GrpGUE_B1", 1, "B1", "ColorBlue"] spawn fnc_folk_localGroupMarker;
 		["GrpGUE_B2", 1, "B2", "ColorBlue"] spawn fnc_folk_localGroupMarker;
@@ -370,22 +372,22 @@ switch (_unitfaction) do
 		["GrpGUE_HAT1",  3, "HAT1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpGUE_SAM1",  3, "SAM1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpGUE_ENG1",  6, "ENG1", "ColorYellow"] spawn fnc_folk_localGroupMarker;
-		["GrpGUE_IFV1",  7, "IFV1", "ColorRed"] spawn fnc_folk_localGroupMarker;
-		["GrpGUE_IFV2",  7, "IFV2", "ColorBlue"] spawn fnc_folk_localGroupMarker;	
-		["GrpGUE_IFV3",  7, "IFV3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
-		["GrpGUE_TNK1",  7, "TNK1", "ColorRed"] spawn fnc_folk_localGroupMarker;	
+		["GrpGUE_APC1",  7, "APC1", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpGUE_APC2",  7, "APC2", "ColorBlue"] spawn fnc_folk_localGroupMarker;
+		["GrpGUE_APC3",  7, "APC3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
+		["GrpGUE_TNK1",  7, "TNK1", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpGUE_TH1",  8, "TH1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpGUE_TH2",  8, "TH2", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpGUE_AH1",  8, "AH1", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["UnitGUE_CO_M", 0, "COM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitGUE_DC_M", 0, "DCM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
-		["UnitGUE_ASL_M", 0, "AM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;		
+		["UnitGUE_ASL_M", 0, "AM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitGUE_BSL_M", 0, "BM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitGUE_CSL_M", 0, "CM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 	};
 
 // ====================================================================================
-	
+
 // MARKERS: GUERILLA (NAPA)
 // Markers seen by players in GUERILLA (NAPA) slots.
 
@@ -395,8 +397,8 @@ switch (_unitfaction) do
 		["GrpA2GUE_DC", 0, "DC", "ColorYellow"] spawn fnc_folk_localGroupMarker;
 		["GrpA2GUE_ASL", 0, "ASL", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpA2GUE_A1", 1, "A1", "ColorRed"] spawn fnc_folk_localGroupMarker;
-		["GrpA2GUE_A2", 1, "A2", "ColorRed"] spawn fnc_folk_localGroupMarker;		
-		["GrpA2GUE_A3", 1, "A3", "ColorRed"] spawn fnc_folk_localGroupMarker;		
+		["GrpA2GUE_A2", 1, "A2", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpA2GUE_A3", 1, "A3", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpA2GUE_BSL", 0, "BSL", "ColorBlue"] spawn fnc_folk_localGroupMarker;
 		["GrpA2GUE_B1", 1, "B1", "ColorBlue"] spawn fnc_folk_localGroupMarker;
 		["GrpA2GUE_B2", 1, "B2", "ColorBlue"] spawn fnc_folk_localGroupMarker;
@@ -413,16 +415,16 @@ switch (_unitfaction) do
 		["GrpA2GUE_HAT1",  3, "HAT1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpA2GUE_SAM1",  3, "SAM1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpA2GUE_ENG1",  6, "ENG1", "ColorYellow"] spawn fnc_folk_localGroupMarker;
-		["GrpA2GUE_IFV1",  7, "IFV1", "ColorRed"] spawn fnc_folk_localGroupMarker;
-		["GrpA2GUE_IFV2",  7, "IFV2", "ColorBlue"] spawn fnc_folk_localGroupMarker;	
-		["GrpA2GUE_IFV3",  7, "IFV3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
-		["GrpA2GUE_TNK1",  7, "TNK1", "ColorRed"] spawn fnc_folk_localGroupMarker;	
+		["GrpA2GUE_APC1",  7, "APC1", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpA2GUE_APC2",  7, "APC2", "ColorBlue"] spawn fnc_folk_localGroupMarker;
+		["GrpA2GUE_APC3",  7, "APC3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
+		["GrpA2GUE_TNK1",  7, "TNK1", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpA2GUE_TH1",  8, "TH1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpA2GUE_TH2",  8, "TH2", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpA2GUE_AH1",  8, "AH1", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["UnitA2GUE_CO_M", 0, "COM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitA2GUE_DC_M", 0, "DCM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
-		["UnitA2GUE_ASL_M", 0, "AM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;		
+		["UnitA2GUE_ASL_M", 0, "AM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitA2GUE_BSL_M", 0, "BM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitA2GUE_CSL_M", 0, "CM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 	};
@@ -439,8 +441,8 @@ switch (_unitfaction) do
 		["GrpUN_DC", 0, "DC", "ColorYellow"] spawn fnc_folk_localGroupMarker;
 		["GrpUN_ASL", 0, "ASL", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpUN_A1", 1, "A1", "ColorRed"] spawn fnc_folk_localGroupMarker;
-		["GrpUN_A2", 1, "A2", "ColorRed"] spawn fnc_folk_localGroupMarker;		
-		["GrpUN_A3", 1, "A3", "ColorRed"] spawn fnc_folk_localGroupMarker;		
+		["GrpUN_A2", 1, "A2", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpUN_A3", 1, "A3", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpUN_BSL", 0, "BSL", "ColorBlue"] spawn fnc_folk_localGroupMarker;
 		["GrpUN_B1", 1, "B1", "ColorBlue"] spawn fnc_folk_localGroupMarker;
 		["GrpUN_B2", 1, "B2", "ColorBlue"] spawn fnc_folk_localGroupMarker;
@@ -457,16 +459,16 @@ switch (_unitfaction) do
 		["GrpUN_HAT1",  3, "HAT1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpUN_SAM1",  3, "SAM1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpUN_ENG1",  6, "ENG1", "ColorYellow"] spawn fnc_folk_localGroupMarker;
-		["GrpUN_IFV1",  7, "IFV1", "ColorRed"] spawn fnc_folk_localGroupMarker;
-		["GrpUN_IFV2",  7, "IFV2", "ColorBlue"] spawn fnc_folk_localGroupMarker;	
-		["GrpUN_IFV3",  7, "IFV3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
-		["GrpUN_TNK1",  7, "TNK1", "ColorRed"] spawn fnc_folk_localGroupMarker;	
+		["GrpUN_APC1",  7, "APC1", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpUN_APC2",  7, "APC2", "ColorBlue"] spawn fnc_folk_localGroupMarker;
+		["GrpUN_APC3",  7, "APC3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
+		["GrpUN_TNK1",  7, "TNK1", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpUN_TH1",  8, "TH1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpUN_TH2",  8, "TH2", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpUN_AH1",  8, "AH1", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["UnitUN_CO_M", 0, "COM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitUN_DC_M", 0, "DCM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
-		["UnitUN_ASL_M", 0, "AM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;		
+		["UnitUN_ASL_M", 0, "AM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitUN_BSL_M", 0, "BM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitUN_CSL_M", 0, "CM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 	};
@@ -482,8 +484,8 @@ switch (_unitfaction) do
 		["GrpBAF_DC", 0, "DC", "ColorYellow"] spawn fnc_folk_localGroupMarker;
 		["GrpBAF_ASL", 0, "ASL", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpBAF_A1", 1, "A1", "ColorRed"] spawn fnc_folk_localGroupMarker;
-		["GrpBAF_A2", 1, "A2", "ColorRed"] spawn fnc_folk_localGroupMarker;		
-		["GrpBAF_A3", 1, "A3", "ColorRed"] spawn fnc_folk_localGroupMarker;		
+		["GrpBAF_A2", 1, "A2", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpBAF_A3", 1, "A3", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpBAF_BSL", 0, "BSL", "ColorBlue"] spawn fnc_folk_localGroupMarker;
 		["GrpBAF_B1", 1, "B1", "ColorBlue"] spawn fnc_folk_localGroupMarker;
 		["GrpBAF_B2", 1, "B2", "ColorBlue"] spawn fnc_folk_localGroupMarker;
@@ -496,24 +498,24 @@ switch (_unitfaction) do
 		["GrpBAF_MAT1", 3, "MAT1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpBAF_ST1",  4, "ST1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpBAF_HMG1",  2, "HMG1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
-		["GrpBAF_MTR1",  5, "MTR1", "ColorOrange"] spawn fnc_folk_localGroupMarker;		
+		["GrpBAF_MTR1",  5, "MTR1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpBAF_HAT1",  3, "HAT1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpBAF_SAM1",  3, "SAM1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpBAF_ENG1",  6, "ENG1", "ColorYellow"] spawn fnc_folk_localGroupMarker;
-		["GrpBAF_IFV1",  7, "IFV1", "ColorRed"] spawn fnc_folk_localGroupMarker;
-		["GrpBAF_IFV2",  7, "IFV2", "ColorBlue"] spawn fnc_folk_localGroupMarker;	
-		["GrpBAF_IFV3",  7, "IFV3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
-		["GrpBAF_TNK1",  7, "TNK1", "ColorRed"] spawn fnc_folk_localGroupMarker;	
+		["GrpBAF_APC1",  7, "APC1", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpBAF_APC2",  7, "APC2", "ColorBlue"] spawn fnc_folk_localGroupMarker;
+		["GrpBAF_APC3",  7, "APC3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
+		["GrpBAF_TNK1",  7, "TNK1", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["GrpBAF_TH1",  8, "TH1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpBAF_TH2",  8, "TH2", "ColorOrange"] spawn fnc_folk_localGroupMarker;
 		["GrpBAF_AH1",  8, "AH1", "ColorRed"] spawn fnc_folk_localGroupMarker;
 		["UnitBAF_CO_M", 0, "COM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitBAF_DC_M", 0, "DCM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
-		["UnitBAF_ASL_M", 0, "AM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;		
+		["UnitBAF_ASL_M", 0, "AM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitBAF_BSL_M", 0, "BM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 		["UnitBAF_CSL_M", 0, "CM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
 	};
-	
+
 // ====================================================================================
 
 // MARKERS: CZECH REPUBPLIC
@@ -541,7 +543,7 @@ switch (_unitfaction) do
 
 	case "pmc_baf":
 	{
-	
+
 	};
 
 // ====================================================================================
@@ -563,7 +565,7 @@ switch (_unitfaction) do
 	{
 
 	};
-       
+
 // ====================================================================================
 
 };

@@ -99,9 +99,15 @@ if (f_var_debugMode == 1) then
 
 f_var_men = [];
 {
-	if ((_x isKindOf "CAManBase")&&(_x != F2_Precompile_WEST && _x != F2_Precompile_EAST)) then 
+	if(_x != F2_Precompile_WEST && _x != F2_Precompile_EAST) then
+	{
+	if (_x isKindOf "CAManBase") then 
 	{
 		f_var_men = f_var_men + [_x]
+	} else
+	{
+		f_var_men = f_var_men + (crew _x)
+	};
 	};
 } forEach f_var_units;
 

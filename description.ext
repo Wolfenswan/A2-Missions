@@ -7,17 +7,8 @@ class Header
 {
 	gameType = Coop;
 	minPlayers = 1;
-	maxPlayers = 970;
+	maxPlayers = 540;
 };
-
-// ============================================================================================
-
-// F2 - Loading Screen
-// Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f3/en/)
-
-onLoadName = "*** Insert mission name here. ***";
-onLoadMission = "Made by Wolfenswan for Folk ARPS";
-loadScreen = "fa.paa";
 
 // ============================================================================================
 
@@ -42,19 +33,12 @@ respawndelay = 3;
 
 class Params
 {
-
-// ============================================================================================
-
-// F2 - Whether AssignGear should allow Backpacks for OA/BAF/PMC units. Works only on A2 units in CO 1.63 or later.
-// Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
-// WARNING: DO NOT DISABLE THIS COMPONENT OR CHANGE POSITION IN PARAMS; IT MUST BE REFERENCABLE
-// AS "paramsarray select 0" FOR GEAR SCRIPTS TO WORK CORRECTLY
 	class f_param_useBackpacks
         {
                 title = "OA Backpacks";
                 values[] = {0,1};
                 texts[] = {"Off","On"};
-                default = 0;
+                default = 1;
                 code = "f_param_useBackpacks = %1";
         };
 
@@ -121,7 +105,7 @@ class Params
 		title = "$STR_f_param_AISkill_Friendly";
 		values[] = {0,1,2,3};
 		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
-		default = 1;
+		default = 2;
 		code = "f_param_AISkill_Friendly = %1";
 	};
 	class f_param_AISkill_Enemy
@@ -129,7 +113,7 @@ class Params
 		title = "$STR_f_param_AISkill_Enemy";
 		values[] = {0,1,2,3};
 		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
-		default = 1;
+        		default = 2;
 		code = "f_param_AISkill_Enemy = %1";
 	};
 
@@ -160,6 +144,14 @@ class Params
 // F2 - End of Params code blocks.
 // WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
 
+	class custom_param_vE
+	{
+		title = "Visual Effect";
+		values[] = {1,0};
+		texts[] = {"On","Off"};
+		default = 1;
+		code = "custom_param_vE = %1";
+	};
 };
 
 // ============================================================================================

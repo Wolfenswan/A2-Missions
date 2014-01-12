@@ -14,7 +14,6 @@
       </Key>
       <Key ID="STR_f_param_timeOfDay">
         <English> Time of Day </English>
-		<French> Heure de la journée </French>
       </Key>
       <Key ID="STR_f_param_timeOfDay_Option0">
         <English> Dawn </English>
@@ -82,7 +81,6 @@
       </Key>
       <Key ID="STR_f_param_weather">
         <English> Weather </English>
-		<French> Météo </English>
       </Key>
       <Key ID="STR_f_param_weather_Option0">
         <English> Clear </English>

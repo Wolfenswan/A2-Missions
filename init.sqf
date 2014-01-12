@@ -54,7 +54,9 @@ f_script_setGroupIDs = [] execVM "f\common\folk_setGroupIDs.sqf";
 // F2 - ShackTactical Fireteam Member Markers
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-[] execVM "f\common\ShackTac_setlocalFTMemberMarkers.sqf";
+[] execVM "f\common\f_setlocalFTMemberMarkers.sqf";
+
+f_script_setTeamColours = [] execVM "f\common\f_setTeamColours.sqf";
 
 // ====================================================================================
 
@@ -107,12 +109,12 @@ player setVariable ["BIS_noCoreConversations", true];
 // F2 - Automatic Body Removal (FIFO)
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-// f_abrFIFOlength = 30;
-// f_abrDistance = 150;
-// f_abrFIFOmaxLength = 50;
-// f_doNotRemoveBodies = [];
-// ["fifo"] execVM "f\common\f_addRemoveBodyEH.sqf";
-// [] execVM "f\server\f_abrFIFO.sqf";
+ f_abrFIFOlength = 30;
+ f_abrDistance = 6000;
+ f_abrFIFOmaxLength = 50;
+ f_doNotRemoveBodies = [];
+ ["fifo"] execVM "f\common\f_addRemoveBodyEH.sqf";
+ [] execVM "f\server\f_abrFIFO.sqf";
 
 // ====================================================================================
 
@@ -146,7 +148,7 @@ player setVariable ["BIS_noCoreConversations", true];
 
 // [[GroupName],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
 
-// US
+/*// US
 //[[GrpUS_CO,GrpUS_DC,GrpUS_ASL,GrpUS_BSL,GrpUS_CSL,GrpUS_A1,GrpUS_A2,GrpUS_A3,GrpUS_B1,GrpUS_B2,GrpUS_B3,GrpUS_C1,GrpUS_C2,GrpUS_C3,GrpUS_MMG1,GrpUS_MAT1,GrpUS_ST1,GrpUS_ENG1,GrpUS_MTR1,GrpUS_HAT1,GrpUS_HMG1,GrpUS_SAM1,GrpUS_IFV1,GrpUS_IFV2,GrpUS_IFV3,GrpUS_TNK1,GrpUS_TH1,GrpUS_TH2,GrpUS_AH1],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
 
 // USMC
@@ -159,7 +161,7 @@ player setVariable ["BIS_noCoreConversations", true];
 //[[GrpBAF_CO,GrpBAF_DC,GrpBAF_ASL,GrpBAF_BSL,GrpBAF_CSL,GrpBAF_A1,GrpBAF_A2,GrpBAF_A3,GrpBAF_B1,GrpBAF_B2,GrpBAF_B3,GrpBAF_C1,GrpBAF_C2,GrpBAF_C3,GrpBAF_MMG1,GrpBAF_MAT1,GrpBAF_ST1,GrpBAF_ENG1,GrpBAF_MTR1,GrpBAF_HAT1,GrpBAF_HMG1,GrpBAF_SAM1,GrpBAF_IFV1,GrpBAF_IFV2,GrpBAF_IFV3,GrpBAF_TNK1,GrpBAF_TH1,GrpBAF_TH2,GrpBAF_AH1],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
 
 // TK ARMY
-//[[GrpTK_CO,GrpTK_DC,GrpTK_ASL,GrpTK_BSL,GrpTK_CSL,GrpTK_A1,GrpTK_A2,GrpTK_A3,GrpTK_B1,GrpTK_B2,GrpTK_B3,GrpTK_C1,GrpTK_C2,GrpTK_C3,GrpTK_MMG1,GrpTK_MAT1,GrpTK_ST1,GrpTK_ENG1,GrpTK_MTR1,GrpTK_HAT1,GrpTK_HMG1,GrpTK_SAM1,GrpTK_IFV1,GrpTK_IFV2,GrpTK_IFV3,GrpTK_TNK1,GrpTK_TH1,GrpTK_TH2,GrpTK_AH1],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
+[[GrpTK_CO,GrpTK_DC,GrpTK_ASL,GrpTK_BSL,GrpTK_CSL,GrpTK_A1,GrpTK_A2,GrpTK_A3,GrpTK_B1,GrpTK_B2,GrpTK_B3,GrpTK_C1,GrpTK_C2,GrpTK_C3,GrpTK_MMG1,GrpTK_MAT1,GrpTK_ST1,GrpTK_ENG1,GrpTK_MTR1,GrpTK_HAT1,GrpTK_HMG1,GrpTK_SAM1,GrpTK_IFV1,GrpTK_IFV2,GrpTK_IFV3,GrpTK_TNK1,GrpTK_TH1,GrpTK_TH2,GrpTK_AH1],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
 
 // RUSSIAN ARMY
 //[[GrpRU_CO,GrpRU_DC,GrpRU_ASL,GrpRU_BSL,GrpRU_CSL,GrpRU_A1,GrpRU_A2,GrpRU_A3,GrpRU_B1,GrpRU_B2,GrpRU_B3,GrpRU_C1,GrpRU_C2,GrpRU_C3,GrpRU_MMG1,GrpRU_MAT1,GrpRU_ST1,GrpRU_ENG1,GrpRU_MTR1,GrpRU_HAT1,GrpRU_HMG1,GrpRU_SAM1,GrpRU_IFV1,GrpRU_IFV2,GrpRU_IFV3,GrpRU_TNK1,GrpRU_TH1,GrpRU_TH2,GrpRU_AH1],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
@@ -177,7 +179,7 @@ player setVariable ["BIS_noCoreConversations", true];
 //[[GrpA2GUE_CO,GrpA2GUE_DC,GrpA2GUE_ASL,GrpA2GUE_BSL,GrpA2GUE_CSL,GrpA2GUE_A1,GrpA2GUE_A2,GrpA2GUE_A3,GrpA2GUE_B1,GrpA2GUE_B2,GrpA2GUE_B3,GrpA2GUE_C1,GrpA2GUE_C2,GrpA2GUE_C3,GrpA2GUE_MMG1,GrpA2GUE_MAT1,GrpA2GUE_ST1,GrpA2GUE_ENG1,GrpA2GUE_MTR1,GrpA2GUE_HAT1,GrpA2GUE_HMG1,GrpA2GUE_SAM1,GrpA2GUE_IFV1,GrpA2GUE_IFV2,GrpA2GUE_IFV3,GrpA2GUE_TNK1,GrpA2GUE_TH1,GrpA2GUE_TH2,GrpA2GUE_AH1],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
 
 // UN
-//[[GrpUN_CO,GrpUN_DC,GrpUN_ASL,GrpUN_BSL,GrpUN_CSL,GrpUN_A1,GrpUN_A2,GrpUN_A3,GrpUN_B1,GrpUN_B2,GrpUN_B3,GrpUN_C1,GrpUN_C2,GrpUN_C3,GrpUN_MMG1,GrpUN_MAT1,GrpUN_ST1,GrpUN_ENG1,GrpUN_MTR1,GrpUN_HAT1,GrpUN_HMG1,GrpUN_SAM1,GrpUN_IFV1,GrpUN_IFV2,GrpUN_IFV3,GrpUN_TNK1,GrpUN_TH1,GrpUN_TH2,GrpUN_AH1],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";
+//[[GrpUN_CO,GrpUN_DC,GrpUN_ASL,GrpUN_BSL,GrpUN_CSL,GrpUN_A1,GrpUN_A2,GrpUN_A3,GrpUN_B1,GrpUN_B2,GrpUN_B3,GrpUN_C1,GrpUN_C2,GrpUN_C3,GrpUN_MMG1,GrpUN_MAT1,GrpUN_ST1,GrpUN_ENG1,GrpUN_MTR1,GrpUN_HAT1,GrpUN_HMG1,GrpUN_SAM1,GrpUN_IFV1,GrpUN_IFV2,GrpUN_IFV3,GrpUN_TNK1,GrpUN_TH1,GrpUN_TH2,GrpUN_AH1],100,1] execVM "f\server\f_endOnCasualtiesCap.sqf";*/
 
 // ====================================================================================
 
@@ -191,11 +193,11 @@ player setVariable ["BIS_noCoreConversations", true];
 // F2 - AI Skill Selector (coop)
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-f_isFriendlyBLU = 0;
-f_isFriendlyRES = 0;
-f_isFriendlyOPF = 0;
-f_isFriendlyCIV = 0;
-[] execVM "f\common\f_setAISkill.sqf";
+ f_isFriendlyBLU = 0;
+ f_isFriendlyRES = 0;
+ f_isFriendlyOPF = 1;
+ f_isFriendlyCIV = 1;
+ [] execVM "f\common\f_setAISkill.sqf";
 
 // ====================================================================================
 
@@ -235,16 +237,28 @@ f_isFriendlyCIV = 0;
 
 [] execVM "f\common\f_orbatNotes.sqf";
 
-// ====================================================================================
-
-// F2 - Tripwire action
-// Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
-
-// [[UnitName1,UnitName2],25,2,east] execVM "f\common\fa_tripwire_init.sqf";
-
-// ====================================================================================
-
 // F2 - Join Group Action
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
 [false] execVM "f\common\f_groupJoinAddOption.sqf";
+
+// FA Ident
+// Credits: harakka
+
+cutRsc ["introImage", "PLAIN", 1];
+
+// VISUAL EFFECT
+// Credits: Fer
+
+[] execVM "scripts\visualEffect.sqf";
+
+finishMissionInit;
+
+[2000] call compile preprocessFileLineNumbers "modules\CEP_caching\main.sqf";
+
+if (isServer) then {
+ws_fnc_init = execVM "ws_fnc\ws_fnc_init.sqf";
+if (isNil "ws_fnc_compiled") then {ws_fnc_compiled = false};
+waitUntil {ws_fnc_compiled};
+[resistance,0.8] call ws_fnc_betterVehicle;
+};

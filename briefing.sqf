@@ -85,6 +85,17 @@ if (_unitfaction == "bis_tk") exitwith {
 	};
 };
 
+if (_unitfaction == "civ") exitwith {
+
+#include "f\common\f_briefing_tk.sqf"
+
+// DEBUG
+	if (f_var_debugMode == 1) then
+	{
+	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
+	};
+};
+
 // ====================================================================================
 
 // BRIEFING: TAKISTANI MILITIA

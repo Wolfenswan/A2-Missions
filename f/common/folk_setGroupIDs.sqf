@@ -129,7 +129,7 @@ GrpTK_MMG1 setGroupId ["Takistani Army MMG1 -","GroupColor0"];
 GrpTK_MAT1 setGroupId ["Takistani Army MAT1 -","GroupColor0"];
 GrpTK_ST1 setGroupId ["Takistani Army ST1 -","GroupColor0"];
 GrpTK_HMG1 setGroupId ["Takistani Army HMG1 -","GroupColor0"];
-GrpTK_MTR1 setGroupId ["Takistani Army MTR1 -","GroupColor0"];
+GrpTK_MTR1 setGroupId ["Takistani Army ART1 -","GroupColor0"];
 GrpTK_HAT1 setGroupId ["Takistani Army HAT1 -","GroupColor0"];
 GrpTK_SAM1 setGroupId ["Takistani Army SAM1 -","GroupColor0"];
 GrpTK_ENG1 setGroupId ["Takistani Army ENG1 -","GroupColor0"];
@@ -137,6 +137,7 @@ GrpTK_IFV1 setGroupId ["Takistani Army IFV1 -","GroupColor0"];
 GrpTK_IFV2 setGroupId ["Takistani Army IFV2 -","GroupColor0"];
 GrpTK_IFV3 setGroupId ["Takistani Army IFV3 -","GroupColor0"];
 GrpTK_TNK1 setGroupId ["Takistani Army TNK1 -","GroupColor0"];
+GrpTK_TNK2 setGroupId ["Takistani Army TNK2 -","GroupColor0"];
 GrpTK_TH1 setGroupId ["Takistani Army TH1 -","GroupColor0"];
 GrpTK_TH2 setGroupId ["Takistani Army TH2 -","GroupColor0"];
 GrpTK_AH1 setGroupId ["Takistani Army AH1 -","GroupColor0"];
@@ -176,7 +177,7 @@ GrpRU_TH1 setGroupId ["Russian Army TH1 -","GroupColor0"];
 GrpRU_TH2 setGroupId ["Russian Army TH2 -","GroupColor0"];
 GrpRU_AH1 setGroupId ["Russian Army AH1 -","GroupColor0"];
 
-//===================================================================================== 
+//=====================================================================================
 
 // GROUP IDs: TAKISTANI LOCALS (INDEPENDENT)
 // Automatically assigns intelligible names to groups
@@ -211,7 +212,7 @@ GrpGUE_TH1 setGroupId ["TK Local TH1 -","GroupColor0"];
 GrpGUE_TH2 setGroupId ["TK Local TH2 -","GroupColor0"];
 GrpGUE_AH1 setGroupId ["TK Local AH1 -","GroupColor0"];
 
-//===================================================================================== 
+//=====================================================================================
 
 // GROUP IDs: NAPA (INDEPENDENT)
 // Automatically assigns intelligible names to groups
@@ -246,7 +247,7 @@ GrpA2GUE_TH1 setGroupId ["NAPA TH1 -","GroupColor0"];
 GrpA2GUE_TH2 setGroupId ["NAPA TH2 -","GroupColor0"];
 GrpA2GUE_AH1 setGroupId ["NAPA AH1 -","GroupColor0"];
 
-//===================================================================================== 
+//=====================================================================================
 
 // GROUP IDs: UN
 // Automatically assigns intelligible names to groups
@@ -281,7 +282,7 @@ GrpUN_TH1 setGroupId ["UN TH1 -","GroupColor0"];
 GrpUN_TH2 setGroupId ["UN TH2 -","GroupColor0"];
 GrpUN_AH1 setGroupId ["UN AH1 -","GroupColor0"];
 
-//===================================================================================== 
+//=====================================================================================
 
 // GROUP IDs: TAKISTANI MILITIA (OPFOR)
 // Automatically assigns intelligible names to groups
@@ -316,7 +317,7 @@ GrpINS_TH1 setGroupId ["TK Insurgent TH1 -","GroupColor0"];
 GrpINS_TH2 setGroupId ["TK Insurgent TH2 -","GroupColor0"];
 GrpINS_AH1 setGroupId ["TK Insurgent AH1 -","GroupColor0"];
 
-//===================================================================================== 
+//=====================================================================================
 
 // GROUP IDs: CHDKZ (OPFOR)
 // Automatically assigns intelligible names to groups
@@ -351,7 +352,7 @@ GrpA2INS_TH1 setGroupId ["CHDKZ TH1 -","GroupColor0"];
 GrpA2INS_TH2 setGroupId ["CHDKZ TH2 -","GroupColor0"];
 GrpA2INS_AH1 setGroupId ["CHDKZ AH1 -","GroupColor0"];
 
-//===================================================================================== 
+//=====================================================================================
 
 // GROUP IDs: BRITISH ARMED FORCES
 // Automatically assigns intelligible names to groups
@@ -386,7 +387,7 @@ GrpBAF_TH1 setGroupId ["British Army TH1 -","GroupColor0"];
 GrpBAF_TH2 setGroupId ["British Army TH2 -","GroupColor0"];
 GrpBAF_AH1 setGroupId ["British Army AH1 -","GroupColor0"];
 
-//===================================================================================== 
+//=====================================================================================
 
 if (true) exitWith {};
 
