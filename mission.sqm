@@ -82,7 +82,7 @@ class Mission
 	randomSeed=3165154;
 	class Intel
 	{
-		briefingName="faco_co62_HailMary_v3";
+		briefingName="faco_co62_HailMary_v4";
 		briefingDescription="Hold the line against all odds. A-10s can take off at about 10 minutes into the mission.";
 		startWeather=0.25;
 		forecastWeather=0.25;
@@ -4003,7 +4003,7 @@ class Mission
 		};
 		class Item7
 		{
-			position[]={4356.1299,215.93225,12457.321};
+			position[]={4407.5439,203.35936,12561.76};
 			name="mkrFlare_2";
 			type="Empty";
 		};
@@ -4015,12 +4015,6 @@ class Mission
 		};
 		class Item9
 		{
-			position[]={5192.168,177.00095,12829.521};
-			name="mkrFlare_4";
-			type="Empty";
-		};
-		class Item10
-		{
 			position[]={4953.5073,164.84602,12746.339};
 			name="mkrMines";
 			markerType="ELLIPSE";
@@ -4031,79 +4025,79 @@ class Mission
 			b=420;
 			angle=-263.58023;
 		};
-		class Item11
+		class Item10
 		{
 			position[]={4451.2778,174.94679,12890.865};
 			name="mkrSpawn";
 			type="Empty";
 		};
-		class Item12
+		class Item11
 		{
 			position[]={5240.1475,217.68762,12922.767};
 			name="mkrSpawn_1";
 			type="Empty";
 		};
-		class Item13
+		class Item12
 		{
 			position[]={4561.7896,170.61014,12962.118};
 			name="mkrSpawn_2";
 			type="Empty";
 		};
-		class Item14
+		class Item13
 		{
 			position[]={4859.3032,171.42586,12967.176};
 			name="mkrSpawn_3";
 			type="Empty";
 		};
-		class Item15
+		class Item14
 		{
 			position[]={5113.0034,207.11797,12943.056};
 			name="mkrSpawn_4";
 			type="Empty";
 		};
-		class Item16
+		class Item15
 		{
 			position[]={5325.5913,198.49249,12857.742};
 			name="mkrSpawn_5";
 			type="Empty";
 		};
-		class Item17
+		class Item16
 		{
 			position[]={5392.0688,183.86925,12797.816};
 			name="mkrSpawn_6";
 			type="Empty";
 		};
-		class Item18
+		class Item17
 		{
 			position[]={4993.9946,188.97321,12991.029};
 			name="mkrSpawn_7";
 			type="Empty";
 		};
-		class Item19
+		class Item18
 		{
 			position[]={4696.6016,177.6321,12975.343};
 			name="mkrSpawn_8";
 			type="Empty";
 		};
-		class Item20
+		class Item19
 		{
 			position[]={4359.8662,183.72551,12774.751};
 			name="mkrSpawn_9";
 			type="Empty";
 		};
-		class Item21
+		class Item20
 		{
 			position[]={4295.7563,198.73523,12639.121};
 			name="mkrSpawn_10";
 			type="Empty";
 		};
-		class Item22
+		class Item21
 		{
 			position[]={4914.7007,199.90382,12410.206};
 			name="mkrTown";
 			type="Empty";
 		};
-		class Item23
+		class Item22
 		{
 			position[]={4917.6636,339,9685.7686};
 			name="mkrLog";
@@ -4111,7 +4105,7 @@ class Mission
 			type="Faction_US";
 			angle=1.18685;
 		};
-		class Item24
+		class Item23
 		{
 			position[]={5076.2954,181.43242,12487.926};
 			name="mkrM2";
@@ -4119,7 +4113,7 @@ class Mission
 			colorName="ColorRed";
 			angle=43.959599;
 		};
-		class Item25
+		class Item24
 		{
 			position[]={4985.2891,181.10001,12591.282};
 			name="mkrM2_1";
@@ -4127,7 +4121,7 @@ class Mission
 			colorName="ColorRed";
 			angle=19.241968;
 		};
-		class Item26
+		class Item25
 		{
 			position[]={4867.6421,181.98721,12578.25};
 			name="mkrM2_2";
@@ -4135,7 +4129,7 @@ class Mission
 			colorName="ColorRed";
 			angle=-20.829836;
 		};
-		class Item27
+		class Item26
 		{
 			position[]={4793.4067,201.6407,12476.024};
 			name="mkrM2_3";
@@ -4143,7 +4137,7 @@ class Mission
 			colorName="ColorRed";
 			angle=-2.5510387;
 		};
-		class Item28
+		class Item27
 		{
 			position[]={4739.4951,210.36356,12399.267};
 			name="mkrM2_4";
@@ -4151,296 +4145,296 @@ class Mission
 			colorName="ColorRed";
 			angle=-91.021202;
 		};
-		class Item29
+		class Item28
 		{
 			position[]={4900.5225,181.15042,12587.642};
 			name="mkrB";
 			type="Strongpoint";
 			angle=-0.48639172;
 		};
-		class Item30
+		class Item29
 		{
 			position[]={4843.8735,183.04832,12573.975};
 			name="mkrB_1";
 			type="Strongpoint";
 			angle=-0.48639172;
 		};
-		class Item31
+		class Item30
 		{
 			position[]={4990.4741,181.08704,12614.704};
 			name="mkrB_2";
 			type="Strongpoint";
 			angle=-0.48639172;
 		};
-		class Item32
+		class Item31
 		{
 			position[]={5009.0195,179.78436,12562};
 			name="mkrB_3";
 			type="Strongpoint";
 			angle=-0.48639172;
 		};
-		class Item33
+		class Item32
 		{
 			position[]={4726.8906,206.29218,12438.105};
 			name="mkrB_4";
 			type="Strongpoint";
 			angle=-0.48639172;
 		};
-		class Item34
+		class Item33
 		{
 			position[]={4721.2993,214.16072,12366.576};
 			name="mkrB_5";
 			type="Strongpoint";
 			angle=-0.48639172;
 		};
-		class Item35
+		class Item34
 		{
 			position[]={4853.8652,181.9045,12583.52};
 			name="mkrF";
 			type="mil_triangle";
 		};
-		class Item36
+		class Item35
 		{
 			position[]={4861.6509,181.4624,12587.921};
 			name="mkrF_1";
 			type="mil_triangle";
 		};
-		class Item37
+		class Item36
 		{
 			position[]={4870.3579,181.31451,12589.048};
 			name="mkrF_2";
 			type="mil_triangle";
 		};
-		class Item38
+		class Item37
 		{
 			position[]={4878.9673,181.3175,12588.466};
 			name="mkrF_3";
 			type="mil_triangle";
 		};
-		class Item39
+		class Item38
 		{
 			position[]={4888.0596,181.25871,12588.243};
 			name="mkrF_4";
 			type="mil_triangle";
 		};
-		class Item40
+		class Item39
 		{
 			position[]={4911.7817,181.36069,12584.232};
 			name="mkrF_5";
 			type="mil_triangle";
 		};
-		class Item41
+		class Item40
 		{
 			position[]={4920.8525,181.282,12583.153};
 			name="mkrF_6";
 			type="mil_triangle";
 		};
-		class Item42
+		class Item41
 		{
 			position[]={4964.4707,180.77727,12597.751};
 			name="mkrF_7";
 			type="mil_triangle";
 		};
-		class Item43
+		class Item42
 		{
 			position[]={4971.7725,180.98125,12603.825};
 			name="mkrF_8";
 			type="mil_triangle";
 		};
-		class Item44
+		class Item43
 		{
 			position[]={4979.0571,181.04758,12609.339};
 			name="mkrF_9";
 			type="mil_triangle";
 		};
-		class Item45
+		class Item44
 		{
 			position[]={4999.5747,180.64113,12606.041};
 			name="mkrF_10";
 			type="mil_triangle";
 		};
-		class Item46
+		class Item45
 		{
 			position[]={5001.2798,180.51871,12597.128};
 			name="mkrF_11";
 			type="mil_triangle";
 		};
-		class Item47
+		class Item46
 		{
 			position[]={5001.395,180.5652,12588.173};
 			name="mkrF_12";
 			type="mil_triangle";
 		};
-		class Item48
+		class Item47
 		{
 			position[]={5000.7549,180.34973,12579.833};
 			name="mkrF_13";
 			type="mil_triangle";
 		};
-		class Item49
+		class Item48
 		{
 			position[]={5023.2964,179.51132,12552.476};
 			name="mkrF_14";
 			type="mil_triangle";
 		};
-		class Item50
+		class Item49
 		{
 			position[]={5030.5776,179.25981,12547.604};
 			name="mkrF_15";
 			type="mil_triangle";
 		};
-		class Item51
+		class Item50
 		{
 			position[]={5037.5718,179.11186,12542.061};
 			name="mkrF_16";
 			type="mil_triangle";
 		};
-		class Item52
+		class Item51
 		{
 			position[]={5043.7202,179.15622,12536.042};
 			name="mkrF_17";
 			type="mil_triangle";
 		};
-		class Item53
+		class Item52
 		{
 			position[]={5049.6265,179.36623,12529.241};
 			name="mkrF_18";
 			type="mil_triangle";
 		};
-		class Item54
+		class Item53
 		{
 			position[]={5073.8901,179.67065,12505.167};
 			name="mkrF_19";
 			type="mil_triangle";
 		};
-		class Item55
+		class Item54
 		{
 			position[]={5080.7544,179.59459,12499.307};
 			name="mkrF_20";
 			type="mil_triangle";
 		};
-		class Item56
+		class Item55
 		{
 			position[]={5086.9893,179.67401,12493.042};
 			name="mkrF_21";
 			type="mil_triangle";
 		};
-		class Item57
+		class Item56
 		{
 			position[]={5091.9375,180.01256,12486.074};
 			name="mkrF_22";
 			type="mil_triangle";
 		};
-		class Item58
+		class Item57
 		{
 			position[]={5058.3052,180.18819,12516.028};
 			name="mkrB_6";
 			type="Strongpoint";
 			angle=-0.48639172;
 		};
-		class Item59
+		class Item58
 		{
 			position[]={4743.0015,200.8345,12483.802};
 			name="mkrF_23";
 			type="mil_triangle";
 		};
-		class Item60
+		class Item59
 		{
 			position[]={4739.6836,202.05356,12474.965};
 			name="mkrF_24";
 			type="mil_triangle";
 		};
-		class Item61
+		class Item60
 		{
 			position[]={4738.4121,203.21298,12466.158};
 			name="mkrF_25";
 			type="mil_triangle";
 		};
-		class Item62
+		class Item61
 		{
 			position[]={4734.9458,204.17067,12457.651};
 			name="mkrF_26";
 			type="mil_triangle";
 		};
-		class Item63
+		class Item62
 		{
 			position[]={4731.6152,205.03415,12449.615};
 			name="mkrF_27";
 			type="mil_triangle";
 		};
-		class Item64
+		class Item63
 		{
 			position[]={4724.0244,208.12434,12421.02};
 			name="mkrF_28";
 			type="mil_triangle";
 		};
-		class Item65
+		class Item64
 		{
 			position[]={4722.7319,208.96582,12412.883};
 			name="mkrF_29";
 			type="mil_triangle";
 		};
-		class Item66
+		class Item65
 		{
 			position[]={4722,209.89397,12403.86};
 			name="mkrF_30";
 			type="mil_triangle";
 		};
-		class Item67
+		class Item66
 		{
 			position[]={4721.3628,210.88747,12394.462};
 			name="mkrF_31";
 			type="mil_triangle";
 		};
-		class Item68
+		class Item67
 		{
 			position[]={4721.5303,211.76962,12386.421};
 			name="mkrF_32";
 			type="mil_triangle";
 		};
-		class Item69
+		class Item68
 		{
 			position[]={4721.9365,212.87787,12376.908};
 			name="mkrF_33";
 			type="mil_triangle";
 		};
-		class Item70
+		class Item69
 		{
 			position[]={4723.1362,215.56949,12355.975};
 			name="mkrF_34";
 			type="mil_triangle";
 		};
-		class Item71
+		class Item70
 		{
 			position[]={4723.5249,216.83954,12346.563};
 			name="mkrF_35";
 			type="mil_triangle";
 		};
-		class Item72
+		class Item71
 		{
 			position[]={4723.9434,218.04799,12337.29};
 			name="mkrF_36";
 			type="mil_triangle";
 		};
-		class Item73
+		class Item72
 		{
 			position[]={4724.5781,219.0596,12328.69};
 			name="mkrF_37";
 			type="mil_triangle";
 		};
-		class Item74
+		class Item73
 		{
 			position[]={6077.1123,300.99258,7790.5459};
 			name="mkrReinf";
 			type="b_armor";
 		};
-		class Item75
+		class Item74
 		{
 			position[]={6077.8071,300.99292,7790.312};
 			name="mkrReinf_1";
 			type="group_3";
 		};
-		class Item76
+		class Item75
 		{
 			position[]={6041.4878,300.9953,7796.9927};
 			name="mkrReinf_2";
@@ -4448,492 +4442,236 @@ class Mission
 			colorName="ColorBlue";
 			angle=-25.393267;
 		};
-		class Item77
+		class Item76
 		{
 			position[]={4831.7915,191.75397,12523.236};
 			name="mkrB_7";
 			type="Strongpoint";
 			angle=4.4950018;
 		};
-		class Item78
+		class Item77
 		{
 			position[]={4838.7471,188.00461,12542.134};
 			name="mkrF_38";
 			type="mil_triangle";
 		};
-		class Item79
+		class Item78
 		{
 			position[]={4836.5107,189.6781,12533.574};
 			name="mkrF_39";
 			type="mil_triangle";
 		};
-		class Item80
+		class Item79
 		{
 			position[]={4829.9688,193.40668,12513.962};
 			name="mkrF_40";
 			type="mil_triangle";
 		};
-		class Item81
+		class Item80
 		{
 			position[]={4826.0361,195.10974,12504.968};
 			name="mkrF_41";
 			type="mil_triangle";
 		};
-		class Item82
+		class Item81
 		{
 			position[]={4783.6724,199.76543,12489.758};
 			name="mkrF_42";
 			type="mil_triangle";
 			angle=-2.1382182;
 		};
-		class Item83
+		class Item82
 		{
 			position[]={4793.6304,199.30133,12490.378};
 			name="mkrF_43";
 			type="mil_triangle";
 			angle=-4.960875;
 		};
-		class Item84
+		class Item83
 		{
 			position[]={5048.6919,181.99876,12492.877};
 			name="mkrA";
 			type="Depot";
 		};
-		class Item85
+		class Item84
 		{
 			position[]={4981.5889,181.03319,12570.899};
 			name="mkrA_1";
 			type="Depot";
 			angle=91.023155;
 		};
-		class Item86
+		class Item85
 		{
 			position[]={4801.1782,209.13133,12404.686};
 			name="mkrA_2";
 			type="Depot";
 			angle=93.19651;
 		};
-		class Item87
+		class Item86
 		{
 			position[]={4858.5376,185.36963,13078.144};
 			name="mkrVSpawn";
 			type="Empty";
 		};
-		class Item88
+		class Item87
 		{
 			position[]={4683.6396,183.02937,13066.26};
 			name="mkrVSpawn_1";
 			type="Empty";
 		};
-		class Item89
+		class Item88
 		{
 			position[]={5302.4648,280.66879,13050.938};
 			name="mkrVSpawn_2";
 			type="Empty";
 		};
-		class Item90
+		class Item89
 		{
 			position[]={4273.1348,172.95288,13007.126};
 			name="mkrVSpawn_3";
 			type="Empty";
 		};
-		class Item91
+		class Item90
 		{
 			position[]={4069.7507,182.36383,12881.945};
 			name="mkrVSpawn_4";
 			type="Empty";
 		};
-		class Item92
+		class Item91
 		{
 			position[]={5483.8042,248.63002,12981.783};
 			name="mkrVSpawn_5";
 			type="Empty";
 		};
-		class Item93
+		class Item92
 		{
 			position[]={5072.8628,246.81183,13154.218};
 			name="mkrVSpawn_6";
 			type="Empty";
 		};
-		class Item94
+		class Item93
 		{
 			position[]={4695.3696,339,10150.746};
 			name="mkrAirport";
 			type="Empty";
 		};
-		class Item95
+		class Item94
 		{
 			position[]={4950.1919,182.31828,12509.287};
 			name="mkrTown_1";
 			type="Faction_US";
 			b=0.5;
 		};
-		class Item96
+		class Item95
 		{
 			position[]={2125.8083,252.46033,11384.672};
 			name="mkrD_1";
 			type="Faction_US";
 			b=0.5;
 		};
-		class Item97
+		class Item96
 		{
 			position[]={3352.3716,261.66199,11934.122};
 			name="mkrD_2";
 			type="Faction_US";
 			b=0.5;
 		};
-		class Item98
+		class Item97
 		{
 			position[]={4959.5049,236.58705,13213.704};
 			name="mkrNAPA_1";
 			type="Faction_TKM_EP1";
 			colorName="ColorRed";
 		};
-		class Item99
+		class Item98
 		{
 			position[]={8399.7871,156.5,12207.303};
 			name="mkrCDF";
 			type="Faction_CDF";
 			b=0.5;
 		};
-		class Item100
+		class Item99
 		{
 			position[]={11155.031,208.99001,12350.555};
 			name="mkrCDF_1";
 			type="Faction_CDF";
 			b=0.5;
 		};
-		class Item101
+		class Item100
 		{
 			position[]={12170.605,154.23047,12798.939};
 			name="mkrCDF_2";
 			type="Faction_CDF";
 			b=0.5;
 		};
-		class Item102
+		class Item101
 		{
 			position[]={8972.2598,196.49466,11878.006};
 			name="mkrCDF_3";
 			type="Faction_CDF";
 			b=0.5;
 		};
-		class Item103
+		class Item102
 		{
 			position[]={4793.5107,201.62431,12476.096};
 			name="mkrB_8";
 			type="Strongpoint";
 			angle=-0.48639172;
 		};
-		class Item104
+		class Item103
 		{
 			position[]={4739.4966,210.35384,12399.359};
 			name="mkrB_9";
 			type="Strongpoint";
 			angle=-0.48639172;
 		};
-		class Item105
+		class Item104
 		{
 			position[]={5076.333,181.4324,12487.891};
 			name="mkrB_10";
 			type="Strongpoint";
 			angle=-0.48639172;
 		};
-		class Item106
+		class Item105
 		{
 			position[]={4985.3574,181.10001,12591.133};
 			name="mkrB_11";
 			type="Strongpoint";
 			angle=-0.48639172;
 		};
-		class Item107
+		class Item106
 		{
 			position[]={4725.3398,207.33907,12428.442};
 			name="mkrF_44";
 			type="mil_triangle";
 		};
-		class Item108
+		class Item107
 		{
 			position[]={4867.6406,181.99008,12578.184};
 			name="mkrB_12";
 			type="Strongpoint";
 			angle=-0.48639172;
 		};
-		class Item109
+		class Item108
 		{
 			position[]={4942.9604,182.00539,12557.063};
 			name="mkrTower";
 			type="mil_triangle";
 			colorName="ColorYellow";
 		};
+		class Item109
+		{
+			position[]={5161.8325,178.99661,12848.479};
+			name="mkrFlare_4";
+			type="Empty";
+		};
 	};
 	class Sensors
 	{
-		items=57;
+		items=62;
 		class Item0
 		{
-			position[]={5267.604,161.02937,12741.178};
-			a=30;
-			b=30;
-			activationBy="ANY";
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="nul = ""Grenade"" createVehicle (position (thislist select 0));";
-			class Effects
-			{
-			};
-		};
-		class Item1
-		{
-			position[]={5160.1543,161.91751,12682.012};
-			a=30;
-			b=30;
-			activationBy="ANY";
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="nul = ""Grenade"" createVehicle (position (thislist select 0));";
-			class Effects
-			{
-			};
-		};
-		class Item2
-		{
-			position[]={5082.8032,164.51321,12683.503};
-			a=30;
-			b=30;
-			activationBy="ANY";
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="nul = ""Grenade"" createVehicle (position (thislist select 0));";
-			class Effects
-			{
-			};
-		};
-		class Item3
-		{
-			position[]={5163.2959,161.07436,12754.597};
-			a=30;
-			b=30;
-			activationBy="ANY";
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="nul = ""Grenade"" createVehicle (position (thislist select 0));";
-			class Effects
-			{
-			};
-		};
-		class Item4
-		{
-			position[]={5093.4238,161.85275,12755.064};
-			a=30;
-			b=30;
-			activationBy="ANY";
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="nul = ""Grenade"" createVehicle (position (thislist select 0));";
-			class Effects
-			{
-			};
-		};
-		class Item5
-		{
-			position[]={4999.1714,165.48149,12712.869};
-			a=30;
-			b=30;
-			activationBy="ANY";
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="nul = ""Grenade"" createVehicle (position (thislist select 0));";
-			class Effects
-			{
-			};
-		};
-		class Item6
-		{
-			position[]={4993.7075,162.85974,12804.935};
-			a=30;
-			b=30;
-			activationBy="ANY";
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="nul = ""Grenade"" createVehicle (position (thislist select 0));";
-			class Effects
-			{
-			};
-		};
-		class Item7
-		{
-			position[]={4931.8696,164.06952,12777.007};
-			a=30;
-			b=30;
-			activationBy="ANY";
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="nul = ""Grenade"" createVehicle (position (thislist select 0));";
-			class Effects
-			{
-			};
-		};
-		class Item8
-		{
-			position[]={4929.123,167.05377,12716.944};
-			a=30;
-			b=30;
-			activationBy="ANY";
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="nul = ""Grenade"" createVehicle (position (thislist select 0));";
-			class Effects
-			{
-			};
-		};
-		class Item9
-		{
-			position[]={4855.478,167.93428,12749.485};
-			a=30;
-			b=30;
-			activationBy="ANY";
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="nul = ""Grenade"" createVehicle (position (thislist select 0));";
-			class Effects
-			{
-			};
-		};
-		class Item10
-		{
-			position[]={4867.9858,164.04584,12806.565};
-			a=30;
-			b=30;
-			activationBy="ANY";
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="nul = ""Grenade"" createVehicle (position (thislist select 0));";
-			class Effects
-			{
-			};
-		};
-		class Item11
-		{
-			position[]={4788.1348,165.4973,12816.042};
-			a=30;
-			b=30;
-			activationBy="ANY";
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="nul = ""Grenade"" createVehicle (position (thislist select 0));";
-			class Effects
-			{
-			};
-		};
-		class Item12
-		{
-			position[]={4732.5122,171.30721,12755.521};
-			a=30;
-			b=30;
-			activationBy="ANY";
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="nul = ""Grenade"" createVehicle (position (thislist select 0));";
-			class Effects
-			{
-			};
-		};
-		class Item13
-		{
-			position[]={4798.9663,169.84871,12744.468};
-			a=30;
-			b=30;
-			activationBy="ANY";
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="nul = ""Grenade"" createVehicle (position (thislist select 0));";
-			class Effects
-			{
-			};
-		};
-		class Item14
-		{
-			position[]={4599.6641,175.46843,12778.346};
-			a=30;
-			b=30;
-			activationBy="ANY";
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="nul = ""Grenade"" createVehicle (position (thislist select 0));";
-			class Effects
-			{
-			};
-		};
-		class Item15
-		{
-			position[]={4713.416,169.51276,12807.524};
-			a=30;
-			b=30;
-			activationBy="ANY";
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="nul = ""Grenade"" createVehicle (position (thislist select 0));";
-			class Effects
-			{
-			};
-		};
-		class Item16
-		{
-			position[]={4663.6494,174.23256,12755.414};
-			a=30;
-			b=30;
-			activationBy="ANY";
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="nul = ""Grenade"" createVehicle (position (thislist select 0));";
-			class Effects
-			{
-			};
-		};
-		class Item17
-		{
-			position[]={4656.3433,170.69484,12818.106};
-			a=30;
-			b=30;
-			activationBy="ANY";
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="nul = ""Grenade"" createVehicle (position (thislist select 0));";
-			class Effects
-			{
-			};
-		};
-		class Item18
-		{
-			position[]={5280.939,158.2117,12680.352};
-			a=30;
-			b=30;
-			angle=22.624317;
-			activationBy="ANY";
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="nul = ""Grenade"" createVehicle (position (thislist select 0));";
-			class Effects
-			{
-			};
-		};
-		class Item19
-		{
-			position[]={5219.0835,159.33975,12695.053};
-			a=30;
-			b=30;
-			angle=22.624317;
-			activationBy="ANY";
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="nul = ""Grenade"" createVehicle (position (thislist select 0));";
-			class Effects
-			{
-			};
-		};
-		class Item20
-		{
-			position[]={4920.8354,198.63881,12415.977};
+			position[]={4903.6299,201.27118,12408.155};
 			a=380;
 			b=380;
 			angle=92.161201;
@@ -4948,21 +4686,7 @@ class Mission
 				title="Flares out!";
 			};
 		};
-		class Item21
-		{
-			position[]={5036.7734,163.02563,12753.877};
-			a=30;
-			b=30;
-			angle=22.624317;
-			activationBy="ANY";
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="nul = ""Grenade"" createVehicle (position (thislist select 0));";
-			class Effects
-			{
-			};
-		};
-		class Item22
+		class Item1
 		{
 			position[]={4890.0991,167.95709,12725.419};
 			a=15;
@@ -4976,7 +4700,7 @@ class Mission
 			{
 			};
 		};
-		class Item23
+		class Item2
 		{
 			position[]={4823.5894,170.47545,12720.841};
 			a=15;
@@ -4990,7 +4714,7 @@ class Mission
 			{
 			};
 		};
-		class Item24
+		class Item3
 		{
 			position[]={4771.605,171.47318,12731.935};
 			a=15;
@@ -5004,7 +4728,7 @@ class Mission
 			{
 			};
 		};
-		class Item25
+		class Item4
 		{
 			position[]={4893.0063,169.41241,12691.39};
 			a=15;
@@ -5018,7 +4742,7 @@ class Mission
 			{
 			};
 		};
-		class Item26
+		class Item5
 		{
 			position[]={5032.3691,166.93436,12674.445};
 			a=15;
@@ -5032,7 +4756,7 @@ class Mission
 			{
 			};
 		};
-		class Item27
+		class Item6
 		{
 			position[]={5106.7627,166.26241,12634.585};
 			a=15;
@@ -5046,7 +4770,7 @@ class Mission
 			{
 			};
 		};
-		class Item28
+		class Item7
 		{
 			position[]={4695.606,175.25456,12712.409};
 			a=15;
@@ -5060,7 +4784,7 @@ class Mission
 			{
 			};
 		};
-		class Item29
+		class Item8
 		{
 			position[]={4733.6133,180.67923,12638.631};
 			a=15;
@@ -5074,7 +4798,7 @@ class Mission
 			{
 			};
 		};
-		class Item30
+		class Item9
 		{
 			position[]={4683.291,191.57309,12561.82};
 			a=15;
@@ -5088,7 +4812,7 @@ class Mission
 			{
 			};
 		};
-		class Item31
+		class Item10
 		{
 			position[]={4627.6616,189.31725,12603.842};
 			a=15;
@@ -5102,7 +4826,7 @@ class Mission
 			{
 			};
 		};
-		class Item32
+		class Item11
 		{
 			position[]={5117.8975,168.26889,12591.631};
 			a=15;
@@ -5116,7 +4840,7 @@ class Mission
 			{
 			};
 		};
-		class Item33
+		class Item12
 		{
 			position[]={5160.2969,167.89555,12565.706};
 			a=15;
@@ -5130,7 +4854,7 @@ class Mission
 			{
 			};
 		};
-		class Item34
+		class Item13
 		{
 			position[]={5064.5005,167.84608,12638.736};
 			a=15;
@@ -5144,7 +4868,7 @@ class Mission
 			{
 			};
 		};
-		class Item35
+		class Item14
 		{
 			position[]={4856.5322,170.31323,12700.963};
 			a=15;
@@ -5158,7 +4882,7 @@ class Mission
 			{
 			};
 		};
-		class Item36
+		class Item15
 		{
 			position[]={4737.4482,173.45242,12714.217};
 			a=15;
@@ -5172,21 +4896,7 @@ class Mission
 			{
 			};
 		};
-		class Item37
-		{
-			position[]={5218.7012,160.71432,12630.743};
-			a=30;
-			b=30;
-			angle=22.624317;
-			activationBy="ANY";
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="nul = ""Grenade"" createVehicle (position (thislist select 0));";
-			class Effects
-			{
-			};
-		};
-		class Item38
+		class Item16
 		{
 			position[]={4953.7603,189.1319,12453.482};
 			a=150;
@@ -5194,9 +4904,9 @@ class Mission
 			angle=92.161201;
 			rectangular=1;
 			activationBy="WEST";
-			timeoutMin=600;
-			timeoutMid=660;
-			timeoutMax=720;
+			timeoutMin=560;
+			timeoutMid=600;
+			timeoutMax=660;
 			age="UNKNOWN";
 			expActiv="USMC_A10 setFuel 1;USMC_A10_1 setFuel 1;";
 			class Effects
@@ -5206,7 +4916,7 @@ class Mission
 				title="A10s are refuelled!";
 			};
 		};
-		class Item39
+		class Item17
 		{
 			position[]={5186.1128,168.78433,12535.327};
 			a=15;
@@ -5220,7 +4930,7 @@ class Mission
 			{
 			};
 		};
-		class Item40
+		class Item18
 		{
 			position[]={4661.0293,180.04437,12679.599};
 			a=15;
@@ -5234,7 +4944,7 @@ class Mission
 			{
 			};
 		};
-		class Item41
+		class Item19
 		{
 			position[]={4785.5576,186.61768,12569.341};
 			a=15;
@@ -5248,7 +4958,7 @@ class Mission
 			{
 			};
 		};
-		class Item42
+		class Item20
 		{
 			position[]={4740.8652,191.24797,12546.715};
 			a=15;
@@ -5262,7 +4972,7 @@ class Mission
 			{
 			};
 		};
-		class Item43
+		class Item21
 		{
 			position[]={4998.0469,168.91185,12661.623};
 			a=15;
@@ -5276,7 +4986,7 @@ class Mission
 			{
 			};
 		};
-		class Item44
+		class Item22
 		{
 			position[]={4962.5933,167.1642,12701.38};
 			a=15;
@@ -5290,7 +5000,7 @@ class Mission
 			{
 			};
 		};
-		class Item45
+		class Item23
 		{
 			position[]={4499.5918,212.87555,12463.883};
 			a=15;
@@ -5304,7 +5014,7 @@ class Mission
 			{
 			};
 		};
-		class Item46
+		class Item24
 		{
 			position[]={4520.8857,206.57961,12504.09};
 			a=15;
@@ -5318,7 +5028,7 @@ class Mission
 			{
 			};
 		};
-		class Item47
+		class Item25
 		{
 			position[]={4486.8613,195.10225,12610.34};
 			a=15;
@@ -5333,7 +5043,7 @@ class Mission
 			{
 			};
 		};
-		class Item48
+		class Item26
 		{
 			position[]={4519.2822,185.93973,12660.699};
 			a=15;
@@ -5348,7 +5058,7 @@ class Mission
 			{
 			};
 		};
-		class Item49
+		class Item27
 		{
 			position[]={4497.5313,201.21484,12553.158};
 			a=15;
@@ -5363,7 +5073,7 @@ class Mission
 			{
 			};
 		};
-		class Item50
+		class Item28
 		{
 			position[]={4570.8579,187.27171,12634.325};
 			a=15;
@@ -5378,59 +5088,20 @@ class Mission
 			{
 			};
 		};
-		class Item51
+		class Item29
 		{
-			position[]={4528.4155,176.87561,12791.516};
+			position[]={4607.8042,180.95325,12694.616};
 			a=30;
 			b=30;
-			activationBy="ANY";
+			activationBy="EAST";
 			interruptable=1;
 			age="UNKNOWN";
-			expActiv="nul = ""Grenade"" createVehicle (position (thislist select 0));";
+			expActiv="thislist call ws_fnc_mines;";
 			class Effects
 			{
 			};
 		};
-		class Item52
-		{
-			position[]={4580.6313,171.91931,12834.445};
-			a=30;
-			b=30;
-			activationBy="ANY";
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="nul = ""Grenade"" createVehicle (position (thislist select 0));";
-			class Effects
-			{
-			};
-		};
-		class Item53
-		{
-			position[]={5067.5747,163.21263,12818.752};
-			a=30;
-			b=30;
-			activationBy="ANY";
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="nul = ""Grenade"" createVehicle (position (thislist select 0));";
-			class Effects
-			{
-			};
-		};
-		class Item54
-		{
-			position[]={4552.8364,179.76244,12736.592};
-			a=30;
-			b=30;
-			activationBy="ANY";
-			interruptable=1;
-			age="UNKNOWN";
-			expActiv="nul = ""Grenade"" createVehicle (position (thislist select 0));";
-			class Effects
-			{
-			};
-		};
-		class Item55
+		class Item30
 		{
 			position[]={4943.5571,212.74706,12260.674};
 			a=0;
@@ -5443,7 +5114,7 @@ class Mission
 				track="PMC_Track05";
 			};
 		};
-		class Item56
+		class Item31
 		{
 			position[]={4901.7583,215.61877,12265.406};
 			a=0;
@@ -5457,6 +5128,396 @@ class Mission
 				titleType="TEXT";
 				titleEffect="PLAIN DOWN";
 				title="Reinforcements are inbound! The enemy is throwing everything they have at us!";
+			};
+		};
+		class Item32
+		{
+			position[]={4545.9688,180.75995,12722.858};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
+			};
+		};
+		class Item33
+		{
+			position[]={4479.8701,186.23766,12679.508};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
+			};
+		};
+		class Item34
+		{
+			position[]={4567.394,175.6102,12789.78};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
+			};
+		};
+		class Item35
+		{
+			position[]={4642.5063,175.63026,12752.01};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
+			};
+		};
+		class Item36
+		{
+			position[]={4634.3516,171.70757,12814.675};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
+			};
+		};
+		class Item37
+		{
+			position[]={4709.0347,172.20413,12752.439};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
+			};
+		};
+		class Item38
+		{
+			position[]={4704.7422,169.57875,12811.671};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
+			};
+		};
+		class Item39
+		{
+			position[]={4774.7046,172.21338,12719.391};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
+			};
+		};
+		class Item40
+		{
+			position[]={4769.9824,168.48218,12786.776};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
+			};
+		};
+		class Item41
+		{
+			position[]={4832.6479,167.76704,12763.598};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
+			};
+		};
+		class Item42
+		{
+			position[]={4820.2012,164.23627,12820.685};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
+			};
+		};
+		class Item43
+		{
+			position[]={4885.8711,163.82022,12806.949};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
+			};
+		};
+		class Item44
+		{
+			position[]={4888.4463,167.38757,12736.988};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
+			};
+		};
+		class Item45
+		{
+			position[]={4948.9653,165.41632,12736.129};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
+			};
+		};
+		class Item46
+		{
+			position[]={4938.665,163.14972,12806.091};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
+			};
+		};
+		class Item47
+		{
+			position[]={5001.7603,162.81496,12795.362};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
+			};
+		};
+		class Item48
+		{
+			position[]={5007.3389,164.8513,12720.678};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
+			};
+		};
+		class Item49
+		{
+			position[]={5061.8491,162.23323,12769.18};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
+			};
+		};
+		class Item50
+		{
+			position[]={5069.1465,164.34923,12696.645};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
+			};
+		};
+		class Item51
+		{
+			position[]={5139.5371,163.02194,12674.753};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
+			};
+		};
+		class Item52
+		{
+			position[]={5127.0903,161.50204,12732.696};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
+			};
+		};
+		class Item53
+		{
+			position[]={5145.1167,162.91219,12792.788};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
+			};
+		};
+		class Item54
+		{
+			position[]={5207.7827,159.93808,12675.183};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
+			};
+		};
+		class Item55
+		{
+			position[]={5195.3354,160.41655,12737.85};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
+			};
+		};
+		class Item56
+		{
+			position[]={5274.7397,158.16078,12665.74};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
+			};
+		};
+		class Item57
+		{
+			position[]={5259.2876,159.84183,12724.542};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
+			};
+		};
+		class Item58
+		{
+			position[]={5327.9619,158.59581,12694.497};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
+			};
+		};
+		class Item59
+		{
+			position[]={5238.686,164.83119,12776.477};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
+			};
+		};
+		class Item60
+		{
+			position[]={4494.2349,180.48463,12750.682};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
+			};
+		};
+		class Item61
+		{
+			position[]={4564.8965,183.556,12672.786};
+			a=30;
+			b=30;
+			activationBy="EAST";
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="thislist call ws_fnc_mines;";
+			class Effects
+			{
 			};
 		};
 	};

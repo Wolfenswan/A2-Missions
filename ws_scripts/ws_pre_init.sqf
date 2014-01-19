@@ -1,10 +1,12 @@
 //Processing functions we need later
 call compile preprocessFile "ws_fnc\ws_fnc_init.sqf";
 
+ws_fnc_mines = compile preprocessFileLineNumbers "ws_scripts\ws_mine.sqf";
+
 if (isServer) then {
 // Create forts
-	{[1,_x] execVM "ws_scripts\ws_fort.sqf";} forEach [fort,fort_1,fort_2,fort_3,fort_4,fort_5,fort_6];
-	[2,s] execVM "ws_scripts\ws_fort.sqf";
+	{[1,_x] call compile preprocessFileLineNumbers "ws_scripts\ws_fort.sqf";} forEach [fort,fort_1,fort_2,fort_3,fort_4,fort_5,fort_6];
+	[2,s] call compile preprocessFileLineNumbers "ws_scripts\ws_fort.sqf";
 
 // Fill crates
 {
