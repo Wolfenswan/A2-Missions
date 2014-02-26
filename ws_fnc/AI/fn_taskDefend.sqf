@@ -1,32 +1,38 @@
-// WS_fnc_taskDefend
-// Last Update 19.09.2013
-// By Wolfenswan [FA]: wolfenswanarps@gmail.com | folkarps.com
-// Thanks to Rommel's CBA_fnc_taskDefend and Binesi's improved BIS_fnc_taskDefend
-//
-// FEATURE
-// Have a group man statics and garrison in buildings in a given radius around a position. They prioritize military structures over civilian buildings
-//
-//
-// NOTE
-// To avoid perfomance issues the garrisoning troops will just enter the building and stay there, they won't necessarily face in a smart direction
-//
-// RETURNS
-// [mil buildings occupied, civ buildings occupied]
-//
-// USAGE
-// Minimal:
-// [group,position,radius] call ws_fnc_taskDefend;
-// Full:
-// [group,pos,radius,bool,bool,bool] call ws_fnc_taskDefend
-//
-// PARAMETERS
-// 1. name of group											| MANDATORY
-// 2. position. can be marker, object or [x,y,z]						 	| MANDATORY
-// 3. radius of the area where statics/buildings will be occupied				| MANDATORY
-// 4. Whether to man statics or not								| OPTIONAL - default is TRUE
-// 5. Whether to garrison military structures  modify _milarray for military building classes	| OPTIONAL - default is TRUE	-
-// 6. Whether to garrison civilian buildings								| OPTIONAL - default is true
-//
+/*
+ws_fnc_taskDefend
+Last Update 19.09.2013
+By Wolfenswan [FA]: wolfenswanarps@gmail.com | folkarps.com
+Thanks to Rommel's CBA_fnc_taskDefend and Binesi's improved BIS_fnc_taskDefend
+
+FEATURE
+Have a group man statics and garrison in buildings in a given radius around a position. They prioritize military structures over civilian buildings
+
+NOTE
+To avoid perfomance issues the garrisoning troops will just enter the building and stay there, they won't necessarily face in a smart direction
+
+RETURNS
+[mil buildings occupied (array), civ buildings occupied (array), units left (array)]
+
+USAGE
+Minimal:
+[group,position,radius] call ws_fnc_taskDefend;
+Full:
+[group,pos,radius,bool,bool,bool] call ws_fnc_taskDefend
+
+PARAMETERS
+1. name of group																			| MANDATORY
+2. position. can be marker, object or [x,y,z]												| MANDATORY
+3. radius of the area where statics/buildings will be occupied								| MANDATORY
+4. Whether to man statics or not															| OPTIONAL - default is TRUE
+5. Whether to garrison military structures  modify _milarray for military building classes	| OPTIONAL - default is TRUE	-
+6. Whether to garrison civilian buildings													| OPTIONAL - default is true
+
+EXAMPLE
+[group this,getPosATL this,200] call ws_fnc_taskDefend - in the on activation field of a waypoint this would cause the assigned group to take position in buildings in a 200m radius around the WP
+
+[GrpUS_CO,"mkrTown",150,false,false,true] call ws_fnc_taskDefend - this causes the group assigned as "GrpUS_CO" to take positions in only civilian buildings in a radius of 150 around the marker named "mkrTown"
+
+*/
 
 private ["_debug","_game","_count","_milarrayA2","_badarrayA2","_badarrayA3","_milarrayA3",
 "_group","_newGroup","_pos","_radius","_guns","_garrison","_civil",
@@ -54,7 +60,7 @@ _debug = false; if !(isNil "ws_debug") then {_debug = ws_debug};
 _count = count _this;
 
 _group = _this select 0;
-_pos = _this select 1;
+_pos = (_this select 1) call ws_fnc_getEPos;;
 _radius = _this select 2;
 _guns = true;				//Man statics?
 _garrison = true;			//Garrison military structures? - defined in _milarray
@@ -63,31 +69,20 @@ if (_count > 3) then {_guns = _this select 3};
 if (_count > 4) then {_garrison = _this select 4};
 if (_count > 5) then {_civil  = _this select 5};
 
-_buildings = [];
+_buildings = [_pos,_radius] call ws_fnc_collectBuildings;
 _milarray = [];
 _badarray = [];
 _milbuildings = [];
-
-//Fill buildings array with classes shared by both games
-{
-_buildings = _buildings + nearestObjects [_pos,[_x],_radius];
-} forEach ["Fortress", "House","House_Small","RUINS"];
 
 //Add buildings specific to the game version
 if !(ws_game_a3) then {
 	_milarray = _milarrayA2;
 	_badarray = _badarrayA3;
-	{
-	_buildings = _buildings + nearestObjects [_pos,[_x],_radius];
-	} forEach ["Church"];
 };
 
 if (ws_game_a3) then {
 	_milarray = _milarrayA3;
 	_badarray = _badarrayA3;
-	{
-	_buildings = _buildings + nearestObjects [_pos,[_x],_radius];
-	} forEach ["BagBunker_base_F","Stall_base_F","Shelter_base_F"];
 };
 
 //Remove undesired classes from the array and populate the array containg military buildings in the area
@@ -98,10 +93,11 @@ if (ws_game_a3) then {
 
 //Man the statics
 if (_guns) then {
-[_group, _radius] call ws_fnc_taskCrew;
+	[_group, _radius] call ws_fnc_taskCrew;
 };
 
 _units = units _group;
+_group enableAttack false; // Prevent the group leader to issue attack orders to the members, improving their attack from buildings
 
 // Fill bunkers etc
 if (count _milbuildings > 0 && count _units > 0 && _garrison) then {
@@ -113,15 +109,19 @@ if (_debug) then {{_mkr = createMarker [format ["%1-bpos",_x],_x];_mkr setMarker
 
 //Take position in regular buildings
 if (count _buildings > 0 && count _units > 0 && _civil) then {
-_units = [_units,_buildings,3] call ws_fnc_enterbuilding;
+_units = [_units,_buildings,2] call ws_fnc_enterbuilding;
 if (_debug) then {{_mkr = createMarker [format ["%1-bpos",_x],_x];_mkr setMarkerSize [0.4,0.4];_mkr setMarkerType "mil_dot";_mkr setMarkerColor "ColorWhite";}forEach _buildings;};
 };
 
+
 //If there's one unit left they either patrol or hold the area.
 if (count _units >= 1) then {
+	_group = createGroup (side (_units select 0));
+	_units joinSilent _group;
 	if (random 1 > 0.5) then {[_group,_pos,["hold",_radius]] call ws_fnc_addWaypoint;} else {
 		[_group,_pos,["patrol",_radius]] call ws_fnc_addWaypoint;
 	};
-} else {deleteGroup _group};
+};
 
-[_milbuildings,_buildings]
+[_milbuildings,_buildings,_units]
+

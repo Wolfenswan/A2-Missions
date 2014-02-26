@@ -5,7 +5,6 @@
 //
 // FEATURE
 // Turn input into legit positional array [x,y,z], returns array
-// For a more powerful getPos script look up SHK_pos by Shuko
 //
 // USAGE
 // Minimal:
@@ -17,7 +16,7 @@
 // Array: [x,y,z]
 //
 // PARAMETERS
-// 1. location can be String (Markername), Array [x,y,z] or Objectname														| MANDATORY
+// 1. location can be String (Markername), Array [x,y,z], Group or Objectname														| MANDATORY
 // 2. radius has to be int > 0 and defines the radius around the position. If set to true it will instead return a position inside a trigger/marker passed in the 1. parameter	| OPTIONAL - default is 0
 // 3. minimal distance from center, has to be int > 0 and > radius		 													| OPTIONAL - default is 0
 // 4. Minimal and maximal angle from center. Array: [minAngle,maxAngle] with both values being integers from 0- 360							| OPTIONAL - default is [0,360]
@@ -55,18 +54,10 @@ if (_count > 5) then {_building = _this select 5;};
 if (_count > 6) then {_water = _this select 6;};
 
 //Interpreting variables
-
-//Getting a good position from the parsed values
-switch (typename _posloc) do {
-	case "STRING": {_pos = getMarkerPos _posloc;};
-	case "OBJECT": {_pos = getPos _posloc;};
-	case "ARRAY": {_pos = _posloc};
-	default {[_posloc,["ARRAY","OBJECT","STRING"],"ws_fnc_getPos"] call ws_fnc_typecheck;};
-};
+_pos = _posloc call ws_fnc_getEpos;
 
 _posX = (_pos select 0);
 _posY = (_pos select 1);
-_pos set [2,0];
 
 //Fault checks
 //Checking the variables we have against what we should have
@@ -94,7 +85,7 @@ switch (typename _posradius) do {
 		};
 	};
 	case "BOOL": {
-	_pos = [_posloc] call ws_fnc_getPosInArea;
+		_pos = [_posloc] call ws_fnc_getPosInArea;
 }	;
 };
 
@@ -107,17 +98,19 @@ if (!_water && (surfaceIsWater _pos)) then {
 };
 
 //If building positions are disallowed
-if (!_building && (count (_pos nearObjects ["House",10]) >= 1)) then {
-	player sidechat "2";
+if (!_building && (count (_pos nearObjects ["House",5]) >= 1)) then {
 	_i = 0;
 	_distance = 0;
 	_done = false;
-	while {!_done && _i <= 50} do {
+	while {!_done && _i <= 100} do {
 		for "_x" from 0 to 340 step 20 do {
-			_distance = _distance + 50;
-			_pos set [0,_posX + (_distance * sin _x)];
-			_pos set [1,_posY + (_distance * cos _x)];
-			if !(count (_pos nearObjects ["House",10]) >= 1) exitWith {_done = true};
+			if (typeName _posradius == "BOOL") then {_pos = [_posloc] call ws_fnc_getPosInArea;} else {
+				_distance = _distance + 5;
+				_pos set [0,_posX + (_distance * sin _x)];
+				_pos set [1,_posY + (_distance * cos _x)];
+			};
+
+			if !(count (_pos nearObjects ["House",5]) >= 1) exitWith {_done = true};
 		};
 		_i = _i + 1;
 	};
